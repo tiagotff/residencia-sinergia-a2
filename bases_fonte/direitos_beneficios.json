@@ -1,0 +1,360 @@
+{
+  "cabecalho": {
+    "Título": "Base de Conhecimento RH: Benefícios e Direitos Trabalhistas",
+    "Código": "KB-RH-BEN-002",
+    "Versão": "1.1",
+    "Vigência": "a partir de 25/11/2026",
+    "Tipo de fonte": "INTERNO",
+    "Fonte": "Recursos Humanos (RH) — SinergIA; Constituição Federal art. 7º e ADCT art. 10; CLT (Decreto-Lei nº 5.452/1943); Leis nº 605/1949, 4.749/1965, 7.418/1985, 8.036/1990, 8.213/1991, 10.101/2000, 12.506/2011 e 15.371/2026; Convenção Coletiva e Políticas Internas",
+    "Base RAG": "Benefícios e Direitos Trabalhistas (funcionalidade F2)",
+    "Responsável": "Time SinergIA (Base RAG)",
+    "Aprovação": "PENDENTE — validação por Recursos Humanos",
+    "Convenções": "Cada pergunta tem um ID (RH-BEN-Qnnn) no título, uma linha \"Também perguntam\" com variações e uma linha \"Fonte\" que separa norma (OFICIAL) de regra da empresa (INTERNO). Em conflito, a norma prevalece; a regra interna só pode ser mais rigorosa. Dados individuais do colaborador (saldo de férias, holerite, extratos) NÃO ficam aqui: vêm dos sistemas/ ferramentas de RH.",
+    "Revisão": "25/11/2026 (v1.1: perguntas 012 a 030; licença-paternidade atualizada pela Lei nº 15.371/2026); próxima: 25/02/2027"
+  },
+  "secoes": [
+    {
+      "titulo": "1. Direitos fundamentais da CLT (Consolidação das Leis do Trabalho)",
+      "perguntas": [
+        {
+          "id": "RH-BEN-Q001",
+          "titulo": "Como funcionam o período aquisitivo e o pagamento de Férias?",
+          "variacoes": [
+            "quando tenho direito a férias",
+            "quando cai o pagamento das férias",
+            "quanto recebo de adicional de férias"
+          ],
+          "resposta": "Após cada período de 12 meses de trabalho (período aquisitivo), o colaborador adquire direito a 30 dias de descanso remunerado, acrescido do adicional constitucional de 1/3. O pagamento deve ocorrer até 2 dias antes do início do gozo.",
+          "fonte": "CLT (OFICIAL)"
+        },
+        {
+          "id": "RH-BEN-Q002",
+          "titulo": "Quais são as regras e datas de pagamento do 13º Salário (Gratificação Natalina)?",
+          "variacoes": [
+            "quando é pago o décimo terceiro",
+            "posso pedir adiantamento do 13º nas férias",
+            "quais descontos vêm na segunda parcela do 13º"
+          ],
+          "resposta": "Pago em duas parcelas: a 1ª parcela (equivalente a 50% da remuneração) é paga entre 02/02 e 30/11 (ou no adiantamento de férias, se solicitado); a 2ª parcela (com descontos de INSS/IRRF) é paga obrigatoriamente até 20/12.",
+          "fonte": "CLT (OFICIAL)"
+        },
+        {
+          "id": "RH-BEN-Q003",
+          "titulo": "Quais são os prazos e regras das Licenças Remuneradas?",
+          "variacoes": [
+            "quantos dias de licença maternidade ou paternidade",
+            "quantos dias de folga por casamento ou falecimento",
+            "como funciona atestado médico acima de 15 dias"
+          ],
+          "resposta": "• Licença-Maternidade: 120 dias garantidos pela CLT (estendidos a 180 dias no programa Empresa Cidadã).\n• Licença-Paternidade: 5 dias consecutivos contados a partir do nascimento ou da adoção até 31/12/2026. Pela Lei nº 15.371/2026, passa a 10 dias a partir de 01/01/2027, 15 dias a partir de 01/01/2028 e 20 dias a partir de 01/01/2029 (veja a pergunta sobre a nova licença-paternidade).\n• Gala (Casamento): Até 3 dias consecutivos de afastamento.\n• Luto (Nojo): Até 2 dias consecutivos em caso de falecimento de cônjuge, pais, filhos, irmãos ou dependentes.\n• Afastamento Médico: Atestados cobrem os primeiros 15 dias; a partir do 16º dia o pagamento é via INSS.",
+          "fonte": "CLT (OFICIAL); Lei nº 15.371/2026 (OFICIAL); Programa Empresa Cidadã (INTERNO)"
+        },
+        {
+          "id": "RH-BEN-Q004",
+          "titulo": "O que é a estabilidade provisória por acidente de trabalho?",
+          "variacoes": [
+            "tenho estabilidade depois de sofrer acidente de trabalho",
+            "quanto tempo dura a estabilidade do B91"
+          ],
+          "resposta": "Garantia de emprego pelo período mínimo de 12 meses após a alta médica do INSS para o trabalhador que sofreu acidente de trabalho ou desenvolveu doença ocupacional com afastamento superior a 15 dias (auxílio-doença acidentário B91).",
+          "fonte": "CLT / Lei nº 8.213/1991 (OFICIAL)"
+        },
+        {
+          "id": "RH-BEN-Q012",
+          "titulo": "Posso dividir as minhas férias?",
+          "variacoes": [
+            "fracionar férias",
+            "tirar férias em partes",
+            "férias em três períodos"
+          ],
+          "resposta": "Sim, com a sua concordância, em até 3 períodos: um deles com pelo menos 14 dias corridos e os demais com pelo menos 5 dias corridos cada. As férias não podem começar nos 2 dias que antecedem um feriado ou o descanso semanal.",
+          "fonte": "CLT art. 134 (OFICIAL)"
+        },
+        {
+          "id": "RH-BEN-Q013",
+          "titulo": "Quem decide quando vou tirar férias?",
+          "variacoes": [
+            "escolher a data das férias",
+            "aviso de férias",
+            "com quanto tempo sou avisado das férias"
+          ],
+          "resposta": "A data é definida pela empresa, considerando a necessidade do setor, e deve ser comunicada por escrito com pelo menos 30 dias de antecedência. Membros da mesma família que trabalham na empresa podem tirar férias juntos se não houver prejuízo ao serviço. Converse com o seu gestor sobre a sua preferência de data.",
+          "fonte": "CLT arts. 135 e 136 (OFICIAL)"
+        },
+        {
+          "id": "RH-BEN-Q014",
+          "titulo": "Faltas diminuem os meus dias de férias?",
+          "variacoes": [
+            "faltei e perdi férias",
+            "quantas faltas reduzem as férias",
+            "faltas injustificadas e férias"
+          ],
+          "resposta": "• Até 5 faltas injustificadas no período aquisitivo: 30 dias de férias.\n• De 6 a 14 faltas: 24 dias.\n• De 15 a 23 faltas: 18 dias.\n• De 24 a 32 faltas: 12 dias.\n• Mais de 32 faltas: perde o direito às férias daquele período.\nFaltas justificadas por lei não entram nessa conta.",
+          "fonte": "CLT art. 130 (OFICIAL)"
+        },
+        {
+          "id": "RH-BEN-Q015",
+          "titulo": "Em quais situações posso faltar sem desconto?",
+          "variacoes": [
+            "faltas justificadas",
+            "falta abonada",
+            "doação de sangue abona falta"
+          ],
+          "resposta": "• Falecimento de cônjuge, pais, filhos, irmãos ou dependente: até 2 dias consecutivos.\n• Casamento: até 3 dias consecutivos.\n• Doação voluntária de sangue: 1 dia a cada 12 meses.\n• Alistamento eleitoral: até 2 dias.\n• Provas de vestibular e comparecimento em juízo: pelo tempo necessário.\n• Acompanhar a esposa ou companheira em até 6 consultas ou exames durante a gravidez.\n• Acompanhar filho de até 6 anos em consulta médica: 1 dia por ano.\n• Exames preventivos de câncer: até 3 dias a cada 12 meses.\nLeve o comprovante ao RH. A convenção coletiva pode prever outras situações.",
+          "fonte": "CLT art. 473 (OFICIAL); CCT/ACT (OFICIAL)"
+        },
+        {
+          "id": "RH-BEN-Q016",
+          "titulo": "Como funciona a nova licença-paternidade?",
+          "variacoes": [
+            "licença paternidade 20 dias",
+            "salário-paternidade",
+            "quantos dias de licença o pai tem em 2027"
+          ],
+          "resposta": "A Lei nº 15.371/2026 amplia a licença-paternidade de forma gradual: 10 dias a partir de 01/01/2027, 15 dias a partir de 01/01/2028 e 20 dias a partir de 01/01/2029. Até 31/12/2026 continuam valendo 5 dias. A licença vale para nascimento, adoção ou guarda para fins de adoção, sem prejuízo do emprego e do salário, com o pagamento do salário-paternidade. Para saber se há prorrogação pelo programa Empresa Cidadã, consulte o RH.",
+          "fonte": "Lei nº 15.371/2026 (OFICIAL); Programa Empresa Cidadã (INTERNO)"
+        },
+        {
+          "id": "RH-BEN-Q017",
+          "titulo": "Quais são os direitos da gestante e da mãe que amamenta?",
+          "variacoes": [
+            "estabilidade da gestante",
+            "intervalo para amamentação",
+            "quando começa a licença-maternidade"
+          ],
+          "resposta": "• Estabilidade: desde a confirmação da gravidez até 5 meses após o parto, inclusive no contrato de experiência.\n• Licença-maternidade: pode começar a partir de 28 dias antes do parto.\n• Consultas e exames do pré-natal: dispensa do trabalho pelo tempo necessário para pelo menos 6 consultas.\n• Amamentação: dois descansos de meia hora cada, por dia, até o bebê completar 6 meses.",
+          "fonte": "ADCT art. 10 (OFICIAL); CLT arts. 392 e 396 (OFICIAL); Súmula 244 do TST (OFICIAL)"
+        },
+        {
+          "id": "RH-BEN-Q018",
+          "titulo": "Como funcionam as horas extras e o banco de horas?",
+          "variacoes": [
+            "quanto vale a hora extra",
+            "limite de horas extras por dia",
+            "como funciona o banco de horas"
+          ],
+          "resposta": "• Hora extra: paga com adicional de no mínimo 50% sobre a hora normal (ou o percentual maior da convenção).\n• Limite: em regra, até 2 horas extras por dia.\n• Banco de horas: as horas podem ser compensadas com folgas em até 6 meses (acordo individual) ou até 1 ano (acordo ou convenção coletiva). O saldo não compensado no prazo é pago como hora extra.",
+          "fonte": "CF art. 7º, XVI (OFICIAL); CLT art. 59 (OFICIAL); CCT/ACT (OFICIAL)"
+        },
+        {
+          "id": "RH-BEN-Q019",
+          "titulo": "Trabalho à noite. Tenho adicional noturno?",
+          "variacoes": [
+            "adicional noturno",
+            "hora noturna",
+            "trabalho depois das 22h"
+          ],
+          "resposta": "Sim. Para trabalho urbano entre 22h e 5h, a hora noturna tem adicional de no mínimo 20% sobre a hora diurna, e cada hora noturna é contada como 52 minutos e 30 segundos. A convenção coletiva pode prever percentual maior.",
+          "fonte": "CLT art. 73 (OFICIAL)"
+        },
+        {
+          "id": "RH-BEN-Q020",
+          "titulo": "O que são adicional de insalubridade e de periculosidade?",
+          "variacoes": [
+            "tenho direito a insalubridade",
+            "quanto é a periculosidade",
+            "insalubridade da câmara fria"
+          ],
+          "resposta": "• Insalubridade: devida quando há exposição a agentes nocivos acima dos limites da NR-15, comprovada por laudo técnico, nos graus mínimo, médio ou máximo (10%, 20% ou 40%).\n• Periculosidade: devida em atividades perigosas definidas pela NR-16, de 30% sobre o salário-base.\n• Os dois adicionais não se somam: quando os dois forem devidos, o trabalhador escolhe um.\nA análise do seu caso é feita pelo RH a partir do laudo.",
+          "fonte": "CLT arts. 192 e 193 (OFICIAL); NR-15 e NR-16 (OFICIAL)"
+        },
+        {
+          "id": "RH-BEN-Q021",
+          "titulo": "Até quando o salário deve ser pago?",
+          "variacoes": [
+            "dia do pagamento",
+            "quando cai o salário",
+            "salário atrasado"
+          ],
+          "resposta": "O salário mensal deve ser pago até o 5º dia útil do mês seguinte ao trabalhado. Se houver atraso ou diferença no valor, fale com o RH pelo canal de atendimento.",
+          "fonte": "CLT art. 459 (OFICIAL)"
+        },
+        {
+          "id": "RH-BEN-Q022",
+          "titulo": "Trabalhei no feriado. O que recebo?",
+          "variacoes": [
+            "feriado trabalhado",
+            "trabalhar no feriado paga em dobro",
+            "folga por feriado"
+          ],
+          "resposta": "O trabalho em feriado deve ser pago em dobro, a menos que a empresa conceda outra folga compensatória. As regras do comércio para feriados também dependem da convenção coletiva da categoria.",
+          "fonte": "Lei nº 605/1949, art. 9º (OFICIAL); Súmula 146 do TST (OFICIAL); CCT/ACT (OFICIAL)"
+        },
+        {
+          "id": "RH-BEN-Q023",
+          "titulo": "O que é o FGTS e como consulto?",
+          "variacoes": [
+            "quanto a empresa deposita de FGTS",
+            "ver saldo do FGTS",
+            "FGTS está sendo depositado"
+          ],
+          "resposta": "O FGTS é um depósito mensal feito pela empresa, de 8% da sua remuneração, em uma conta vinculada no seu nome. Você pode acompanhar os depósitos pelo aplicativo oficial do FGTS. Se notar falta de depósito, avise o RH.",
+          "fonte": "Lei nº 8.036/1990, art. 15 (OFICIAL)"
+        },
+        {
+          "id": "RH-BEN-Q024",
+          "titulo": "Como funciona o aviso prévio?",
+          "variacoes": [
+            "quantos dias de aviso prévio",
+            "aviso prévio proporcional",
+            "redução de jornada no aviso"
+          ],
+          "resposta": "O aviso prévio é de 30 dias, com mais 3 dias por ano trabalhado na empresa, até o total de 90 dias. Quando a empresa dá o aviso, você pode reduzir 2 horas por dia da jornada ou faltar 7 dias corridos, sem desconto.",
+          "fonte": "CLT art. 488 (OFICIAL); Lei nº 12.506/2011 (OFICIAL)"
+        },
+        {
+          "id": "RH-BEN-Q025",
+          "titulo": "Como funciona o atestado médico?",
+          "variacoes": [
+            "atestado abona a falta",
+            "quem paga os dias de atestado",
+            "atestado de mais de 15 dias"
+          ],
+          "resposta": "O atestado médico justifica a falta. Os primeiros 15 dias de afastamento são pagos pela empresa; a partir do 16º dia, o pagamento passa a ser do INSS, mediante perícia. Siga o procedimento de envio de atestado da empresa e entregue o original ao RH quando solicitado.",
+          "fonte": "Lei nº 8.213/1991, art. 60 (OFICIAL); Política Interna RH (INTERNO)"
+        }
+      ]
+    },
+    {
+      "titulo": "2. Acordos e Convenções Coletivas de Trabalho (CCT / ACT)",
+      "perguntas": [
+        {
+          "id": "RH-BEN-Q005",
+          "titulo": "Qual a diferença entre Acordo Coletivo e Convenção Coletiva?",
+          "variacoes": [
+            "o que é ACT e CCT",
+            "diferença entre acordo e convenção do sindicato"
+          ],
+          "resposta": "O Acordo Coletivo (ACT) é firmado entre o Sindicato dos Trabalhadores e uma empresa específica. A Convenção Coletiva (CCT) é pactuada entre o Sindicato dos Trabalhadores e o Sindicato Patronal da categoria.",
+          "fonte": "CLT (OFICIAL)"
+        },
+        {
+          "id": "RH-BEN-Q006",
+          "titulo": "Quais itens podem ser negociados em Acordo ou Convenção Coletiva?",
+          "variacoes": [
+            "o que o sindicato negocia na convenção coletiva",
+            "banco de horas e reajuste salarial entram em CCT"
+          ],
+          "resposta": "Jornada de trabalho, regras de banco de horas, valores e regras de auxílio-refeição, regras para trabalho remoto/híbrido, adicionais noturnos e de insalubridade, além de reajustes salariais anuais e piso da categoria.",
+          "fonte": "CLT (OFICIAL)"
+        }
+      ]
+    },
+    {
+      "titulo": "3. Política Interna de Benefícios Corporativos",
+      "perguntas": [
+        {
+          "id": "RH-BEN-Q007",
+          "titulo": "Quais são os benefícios oferecidos pela empresa e seus critérios?",
+          "variacoes": [
+            "quais benefícios a empresa oferece",
+            "quando cai o vale refeição e alimentação",
+            "como funciona auxílio creche plano de saúde e PLR"
+          ],
+          "resposta": "• Vale-Refeição e Alimentação (VR/VA): Crédito mensal disponibilizado em cartão de benefícios no 1º dia útil do mês.\n• Auxílio-Creche: Ressarcimento mediante comprovação de gastos para filhos de até 5 anos (conforme norma interna).\n• Planos de Saúde e Odontológico: Cobertura nacional/regional com opção de inclusão de dependentes diretos (cônjuge e filhos). Os prazos de carência e valores de coparticipação seguem o contrato da operadora.\n• Bônus / PLR: Pagamento atrelado ao cumprimento de metas individuais e globais de desempenho da empresa.",
+          "fonte": "Política Interna RH (INTERNO); CCT/ACT (OFICIAL)"
+        },
+        {
+          "id": "RH-BEN-Q026",
+          "titulo": "Como incluo um dependente no plano de saúde?",
+          "variacoes": [
+            "incluir filho no convênio",
+            "colocar esposa no plano de saúde",
+            "dependente no plano odontológico"
+          ],
+          "resposta": "Solicite ao RH pelo Portal do Colaborador, com os documentos do dependente (por exemplo, certidão de nascimento ou de casamento). Prazos de carência e valores de coparticipação seguem o contrato da operadora; o RH informa as regras do seu plano.",
+          "fonte": "Política Interna RH (INTERNO)"
+        },
+        {
+          "id": "RH-BEN-Q027",
+          "titulo": "O que é a PLR e como é paga?",
+          "variacoes": [
+            "participação nos lucros",
+            "quando cai a PLR",
+            "PLR tem desconto"
+          ],
+          "resposta": "A Participação nos Lucros ou Resultados é definida em acordo com o sindicato ou com uma comissão de empregados, com metas e regras claras. Pela lei, ela pode ser paga em no máximo 2 parcelas por ano, com intervalo mínimo de um trimestre entre elas. Os critérios da empresa são divulgados pelo RH.",
+          "fonte": "Lei nº 10.101/2000 (OFICIAL); Política Interna RH (INTERNO)"
+        },
+        {
+          "id": "RH-BEN-Q028",
+          "titulo": "Posso receber o vale-transporte em dinheiro?",
+          "variacoes": [
+            "trocar VT por dinheiro",
+            "vale-transporte em espécie",
+            "não uso ônibus, posso receber o VT"
+          ],
+          "resposta": "Em regra, não: o vale-transporte é fornecido para o deslocamento casa-trabalho, em cartão ou bilhete, e não em dinheiro. Exceções dependem de acordo ou convenção coletiva. Se você não usa transporte público, pode recusar o benefício por escrito, e o desconto de até 6% deixa de existir.",
+          "fonte": "Lei nº 7.418/1985 (OFICIAL); CCT/ACT (OFICIAL); Política Interna RH (INTERNO)"
+        }
+      ]
+    },
+    {
+      "titulo": "4. Dúvidas frequentes (FAQ) e situações do dia a dia",
+      "perguntas": [
+        {
+          "id": "RH-BEN-Q008",
+          "titulo": "Posso vender parte das minhas férias (Abono Pecuniário)?",
+          "variacoes": [
+            "quantos dias de férias posso vender",
+            "até quando pedir abono pecuniário"
+          ],
+          "resposta": "Sim. O colaborador tem o direito de converter até 1/3 do período de férias (10 dias) em dinheiro. A solicitação deve ser feita ao RH até 15 dias antes do término do período aquisitivo.",
+          "fonte": "CLT (OFICIAL)"
+        },
+        {
+          "id": "RH-BEN-Q009",
+          "titulo": "O Vale-Transporte (VT) é obrigatório e como é feito o desconto?",
+          "variacoes": [
+            "quanto desconta de vale transporte no salário",
+            "tenho direito a vale transporte"
+          ],
+          "resposta": "Sim, é garantido por lei para o deslocamento residência-trabalho. O desconto em folha é de até 6% do salário-base do colaborador, sendo o valor excedente custeado integralmente pela empresa.",
+          "fonte": "CLT / Lei nº 7.418/1985 (OFICIAL)"
+        },
+        {
+          "id": "RH-BEN-Q010",
+          "titulo": "Quais são as consequências de uma falta não justificada?",
+          "variacoes": [
+            "o que acontece se eu faltar sem atestado",
+            "falta injustificada desconta DSR e férias"
+          ],
+          "resposta": "A falta injustificada acarreta o desconto do dia não trabalhado, a perda do Descanso Semanal Remunerado (DSR) da semana, e pode reduzir proporcionalmente os dias de direito a férias e o cálculo do 13º salário se somar múltiplos dias no ano.",
+          "fonte": "CLT (OFICIAL)"
+        },
+        {
+          "id": "RH-BEN-Q011",
+          "titulo": "Como consultar extratos de benefícios ou tirar dúvidas?",
+          "variacoes": [
+            "onde vejo meu extrato de benefícios",
+            "como falar com o atendimento de RH sobre benefícios"
+          ],
+          "resposta": "As dúvidas podem ser abertas via Portal do Colaborador (Módulo F8) ou diretamente com o time de Atendimento de RH pelo e-mail corporativo.",
+          "fonte": "Política Interna RH (INTERNO)"
+        },
+        {
+          "id": "RH-BEN-Q029",
+          "titulo": "Meu holerite veio com valor diferente. O que faço?",
+          "variacoes": [
+            "salário veio errado",
+            "desconto que não entendi",
+            "diferença no holerite"
+          ],
+          "resposta": "Confira os itens do holerite (horas extras, faltas, descontos de benefícios e impostos). Se a dúvida continuar, abra um atendimento com o RH pelo Portal do Colaborador, informando o mês e o item. Dados individuais de pagamento não ficam nesta base.",
+          "fonte": "Política Interna RH (INTERNO)"
+        },
+        {
+          "id": "RH-BEN-Q030",
+          "titulo": "Trabalho aos domingos. Como fica a minha folga?",
+          "variacoes": [
+            "escala de domingo",
+            "folga no domingo",
+            "comércio aos domingos"
+          ],
+          "resposta": "No comércio, o trabalho aos domingos é permitido, mas a escala deve garantir que a sua folga semanal caia no domingo pelo menos uma vez a cada três semanas. Regras adicionais (como pagamento ou folgas extras) podem estar na convenção coletiva da categoria.",
+          "fonte": "Lei nº 10.101/2000, art. 6º (OFICIAL); CCT/ACT (OFICIAL)"
+        }
+      ]
+    }
+  ]
+}

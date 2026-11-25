@@ -1,0 +1,3 @@
+{
+  "_leia_me": "Variações extras de pergunta, somadas às linhas 'Também perguntam' dos PDFs só para a BUSCA (não mudam o texto das respostas). Use para testar variações vindas do chat antes de publicar nova versão do PDF; depois, leve-as para bases_fonte/<base>.json, gere o PDF (python ferramentas/gerar_bases_pdf.py) e apague daqui. As variações da v0.4 já foram incorporadas aos PDFs v1.3/2.1/1.1/1.1."
+}

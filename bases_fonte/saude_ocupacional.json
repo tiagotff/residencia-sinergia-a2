@@ -1,0 +1,751 @@
+{
+  "cabecalho": {
+    "Título": "Base de Conhecimento Saúde Ocupacional",
+    "Versão": "1.1",
+    "Vigência": "a partir de 25/11/2026",
+    "Tipo de fonte": "INTERNO",
+    "Fonte": "Serviço de Saúde Ocupacional (médico do trabalho e SESMT) — SinergIA; NR-7 (PCMSO, Portaria SEPRT nº 6.734/2020 e ajustes), NR-1 (GRO/PGR e riscos psicossociais), NR-5 (CIPA), NR-17, CLT arts. 168 e 169, Lei nº 8.213/1991 (art. 22) e Calendário Nacional de Vacinação do Ministério da Saúde",
+    "Base RAG": "Saúde Ocupacional (funcionalidade F4)",
+    "Aprovação": "PENDENTE — validação pelo Médico do Trabalho coordenador do PCMSO",
+    "Revisão": "25/11/2026 (v1.1: perguntas 056 a 063); próxima: 25/02/2027",
+    "Convenções": "Cada pergunta tem um ID (SO-Qnnn) no título, uma linha \"Também perguntam\" com variações e uma linha \"Fonte\" que separa norma (OFICIAL) de regra da empresa (INTERNO). Em conflito, a norma prevalece; a regra interna só pode ser mais rigorosa. Dados do colaborador (exames do cargo, datas de realização e do próximo exame, vacinas aplicadas, eventos) NÃO ficam aqui: vêm do banco pelas ferramentas SQL. Esta base orienta, não diagnostica: dúvida sobre a própria saúde vai para o serviço de saúde da empresa. Tom: cordial, acolhedor e direto.",
+    "Responsável": "Time SinergIA (Base RAG)"
+  },
+  "secoes": [
+    {
+      "titulo": "1. Conceitos básicos",
+      "perguntas": [
+        {
+          "id": "SO-Q001",
+          "titulo": "O que é saúde ocupacional?",
+          "variacoes": [
+            "saúde do trabalho",
+            "medicina do trabalho",
+            "para que serve o serviço de saúde da empresa"
+          ],
+          "resposta": "Saúde ocupacional é o cuidado com a sua saúde em relação ao trabalho: prevenir doenças e acidentes ligados à atividade, acompanhar a sua saúde com exames periódicos e orientar você para trabalhar com segurança e bem-estar. Na empresa, esse cuidado é feito pelo serviço de saúde ocupacional, com o médico do trabalho e a equipe de segurança.",
+          "fonte": "NR-7 (OFICIAL); Orientação de saúde ocupacional (INTERNO)"
+        },
+        {
+          "id": "SO-Q002",
+          "titulo": "O que é o PCMSO?",
+          "variacoes": [
+            "programa de controle médico",
+            "o que significa PCMSO",
+            "para que serve o PCMSO"
+          ],
+          "resposta": "PCMSO é o Programa de Controle Médico de Saúde Ocupacional, previsto na NR-7. Ele define quais exames cada função precisa fazer e com que frequência, para proteger e acompanhar a saúde de quem trabalha e identificar cedo qualquer problema relacionado ao trabalho. O programa é coordenado por um médico do trabalho e é planejado a partir dos riscos de cada atividade.",
+          "fonte": "NR-7 (OFICIAL)"
+        },
+        {
+          "id": "SO-Q003",
+          "titulo": "Qual a relação entre o PCMSO e o PGR?",
+          "variacoes": [
+            "o que é PGR",
+            "de onde vêm os riscos do meu cargo",
+            "gerenciamento de riscos"
+          ],
+          "resposta": "O PGR (Programa de Gerenciamento de Riscos, da NR-1) identifica os riscos de cada atividade, como ruído, frio, esforço físico, produtos químicos e também fatores psicossociais, e define as medidas de prevenção. O PCMSO usa essa avaliação para decidir quais exames você precisa fazer. Por isso, os exames do seu cargo têm relação com os riscos da sua atividade.",
+          "fonte": "NR-1 (OFICIAL); NR-7 (OFICIAL)"
+        },
+        {
+          "id": "SO-Q004",
+          "titulo": "Quem cuida da saúde ocupacional na empresa?",
+          "variacoes": [
+            "quem é o médico do trabalho",
+            "o que é SESMT",
+            "com quem eu falo sobre saúde no trabalho"
+          ],
+          "resposta": "Algumas pessoas cuidam disso juntas:\n• o médico do trabalho, que coordena o PCMSO e realiza ou acompanha os exames ocupacionais;\n• o SESMT (Serviço Especializado em Segurança e Medicina do Trabalho), com o Técnico de Segurança do Trabalho (TST) e, quando houver, enfermeiro e engenheiro de segurança;\n• a CIPA, formada por representantes da empresa e dos colaboradores, que ajuda a prevenir acidentes, doenças e assédio. Para dúvidas sobre a sua saúde, o caminho é o serviço de saúde da empresa.",
+          "fonte": "NR-4 (OFICIAL); NR-5 (OFICIAL); NR-7 (OFICIAL)"
+        },
+        {
+          "id": "SO-Q005",
+          "titulo": "O que é a CIPA e como ela pode me ajudar?",
+          "variacoes": [
+            "o que significa CIPA",
+            "quem são os cipeiros",
+            "CIPA e assédio"
+          ],
+          "resposta": "A CIPA é a Comissão Interna de Prevenção de Acidentes e de Assédio. Ela acompanha as condições de trabalho, ouve os colaboradores, sugere melhorias e também atua na prevenção e no combate ao assédio. Se você perceber uma situação de risco, pode procurar um membro da CIPA, além do seu gestor e do TST.",
+          "fonte": "NR-5 (OFICIAL)"
+        },
+        {
+          "id": "SO-Q006",
+          "titulo": "Minhas informações de saúde são sigilosas?",
+          "variacoes": [
+            "o gestor vai saber da minha doença",
+            "o médico conta para o RH",
+            "sigilo médico"
+          ],
+          "resposta": "Sim. As informações dos seus exames e consultas são protegidas pelo sigilo médico e ficam no seu prontuário, sob responsabilidade do médico. A empresa recebe apenas o que é necessário para o trabalho, como a conclusão de apto ou inapto para a função, e não o seu diagnóstico. Pela LGPD, dados de saúde são dados pessoais sensíveis e têm proteção especial.",
+          "fonte": "NR-7 (OFICIAL); LGPD, Lei nº 13.709/2018 (OFICIAL)"
+        },
+        {
+          "id": "SO-Q063",
+          "titulo": "Como a minha saúde é acompanhada ao longo do tempo na empresa?",
+          "variacoes": [
+            "acompanhamento de saúde",
+            "histórico de saúde ocupacional",
+            "para que servem os exames periódicos"
+          ],
+          "resposta": "O PCMSO acompanha a sua saúde desde a admissão, com exames definidos para os riscos do seu cargo. Os resultados ficam no prontuário do serviço de saúde, com sigilo, e ajudam a identificar cedo qualquer efeito do trabalho na sua saúde, para ajustar a prevenção.",
+          "fonte": "NR-7 (OFICIAL)"
+        }
+      ]
+    },
+    {
+      "titulo": "2. Exames ocupacionais (PCMSO)",
+      "perguntas": [
+        {
+          "id": "SO-Q007",
+          "titulo": "Quais exames ocupacionais eu faço?",
+          "variacoes": [
+            "tipos de exame da empresa",
+            "exame do trabalho",
+            "quais exames são obrigatórios"
+          ],
+          "resposta": "O PCMSO prevê cinco momentos de exame clínico ocupacional:\n• admissional: antes de começar a trabalhar;\n• periódico: de tempos em tempos, enquanto você trabalha na empresa;\n• retorno ao trabalho: depois de um afastamento de 30 dias ou mais;\n• mudança de risco: antes de mudar para uma função com riscos diferentes;\n• demissional: no desligamento. Dependendo dos riscos do seu cargo, também podem ser pedidos exames complementares, como audiometria. Para saber quais exames o seu cargo exige e quando é o próximo, é só perguntar aqui no chat.",
+          "fonte": "NR-7 (OFICIAL)"
+        },
+        {
+          "id": "SO-Q008",
+          "titulo": "O que é o exame admissional?",
+          "variacoes": [
+            "exame de admissão",
+            "preciso fazer exame antes de começar",
+            "exame de entrada"
+          ],
+          "resposta": "É o exame feito antes de você assumir as suas atividades. Ele avalia se você está apto para a função e registra o seu estado de saúde no início, o que serve de referência para os exames seguintes.",
+          "fonte": "NR-7 (OFICIAL)"
+        },
+        {
+          "id": "SO-Q009",
+          "titulo": "De quanto em quanto tempo faço o exame periódico?",
+          "variacoes": [
+            "frequência do periódico",
+            "exame anual",
+            "meu periódico é a cada dois anos?"
+          ],
+          "resposta": "Depende dos riscos da sua atividade:\n• se você está exposto a riscos identificados no PGR, ou tem alguma condição crônica que aumente a sensibilidade a esses riscos, o exame é anual ou em intervalo menor, a critério do médico;\n• para os demais colaboradores, o exame clínico é a cada dois anos. A data do seu próximo exame é calculada a partir do último exame realizado e da periodicidade do seu cargo. Você pode consultá-la aqui no chat.",
+          "fonte": "NR-7 (OFICIAL)"
+        },
+        {
+          "id": "SO-Q010",
+          "titulo": "Quando preciso fazer o exame de retorno ao trabalho?",
+          "variacoes": [
+            "voltei de afastamento",
+            "exame depois do atestado",
+            "voltei do INSS, preciso de exame?"
+          ],
+          "resposta": "Quando você ficou afastado por 30 dias ou mais por doença ou acidente, ligados ou não ao trabalho. O exame é feito antes de você voltar às suas funções, e o médico avalia se o retorno deve ser gradual. Para dúvidas sobre o afastamento em si (atestado, INSS, estabilidade), o Especialista em Direitos e Benefícios pode ajudar.",
+          "fonte": "NR-7 (OFICIAL)"
+        },
+        {
+          "id": "SO-Q011",
+          "titulo": "O que é o exame de mudança de risco?",
+          "variacoes": [
+            "mudei de função",
+            "fui transferido de setor",
+            "exame por troca de cargo"
+          ],
+          "resposta": "É o exame feito antes de você mudar para uma atividade com riscos diferentes dos atuais, por exemplo, ao passar a trabalhar em câmara fria ou com exposição a ruído. Ele ajusta o seu acompanhamento médico aos novos riscos. Na mudança de cargo, também vale conferir se há novos EPIs exigidos.",
+          "fonte": "NR-7 (OFICIAL)"
+        },
+        {
+          "id": "SO-Q012",
+          "titulo": "Como funciona o exame demissional?",
+          "variacoes": [
+            "exame de desligamento",
+            "saí da empresa, preciso de exame",
+            "dispensa do demissional"
+          ],
+          "resposta": "O exame demissional deve ser feito em até 10 dias contados do término do contrato. Ele pode ser dispensado se o seu último exame ocupacional foi feito há menos de 135 dias (empresas de grau de risco 1 e 2) ou há menos de 90 dias (grau de risco 3 e 4).",
+          "fonte": "NR-7 (OFICIAL)"
+        },
+        {
+          "id": "SO-Q013",
+          "titulo": "Por que o meu cargo faz exames diferentes dos de um colega?",
+          "variacoes": [
+            "exame complementar",
+            "por que eu faço audiometria e meu colega não",
+            "exames do meu cargo"
+          ],
+          "resposta": "Porque os exames complementares dependem dos riscos de cada atividade avaliados no PGR. Quem trabalha exposto a ruído, por exemplo, faz audiometria; quem manipula alimentos pode ter exames específicos definidos pelo médico do trabalho. A lista de exames de cada cargo fica no PCMSO, e a do seu cargo pode ser consultada aqui no chat.",
+          "fonte": "NR-7 (OFICIAL); PCMSO da empresa (INTERNO)"
+        },
+        {
+          "id": "SO-Q014",
+          "titulo": "O que é audiometria e quando faço?",
+          "variacoes": [
+            "exame de audição",
+            "exame do ouvido",
+            "trabalho com barulho"
+          ],
+          "resposta": "A audiometria avalia a sua audição. Ela é feita por quem trabalha exposto a ruído acima dos níveis de ação: na admissão, depois anualmente e no desligamento. Para o exame, o ideal é ficar sem exposição a ruído intenso nas horas anteriores, conforme a orientação do serviço de saúde. Usar o protetor auricular corretamente é a melhor forma de proteger a sua audição.",
+          "fonte": "NR-7, Anexo II (OFICIAL)"
+        },
+        {
+          "id": "SO-Q015",
+          "titulo": "Quem paga os exames ocupacionais?",
+          "variacoes": [
+            "tenho que pagar o exame",
+            "o exame é de graça",
+            "vão descontar o exame"
+          ],
+          "resposta": "Pode ficar tranquilo: a empresa paga. Todos os exames e procedimentos do PCMSO são custeados pela empresa, sem nenhum custo para você.",
+          "fonte": "NR-7 (OFICIAL); CLT art. 168 (OFICIAL)"
+        },
+        {
+          "id": "SO-Q016",
+          "titulo": "O exame é feito no horário de trabalho?",
+          "variacoes": [
+            "exame fora do expediente",
+            "preciso compensar as horas do exame",
+            "exame no dia de folga"
+          ],
+          "resposta": "Sim. Pela regra da empresa, os exames ocupacionais são agendados durante a jornada, e o tempo do exame conta como tempo de trabalho. Se o agendamento cair na sua folga ou nas suas férias, por favor, peça a remarcação ao serviço de saúde.",
+          "fonte": "PCMSO da empresa (INTERNO)"
+        },
+        {
+          "id": "SO-Q017",
+          "titulo": "O que é o ASO?",
+          "variacoes": [
+            "atestado de saúde ocupacional",
+            "o que vem escrito no ASO",
+            "apto ou inapto"
+          ],
+          "resposta": "O ASO (Atestado de Saúde Ocupacional) é o documento emitido pelo médico a cada exame ocupacional. Ele traz, entre outras informações, a sua função, os riscos que precisam de acompanhamento médico, os exames realizados e a conclusão de apto ou inapto para a função. O ASO não informa diagnóstico.",
+          "fonte": "NR-7 (OFICIAL)"
+        },
+        {
+          "id": "SO-Q018",
+          "titulo": "Recebo uma cópia do ASO?",
+          "variacoes": [
+            "onde pego meu ASO",
+            "perdi meu ASO",
+            "segunda via do ASO"
+          ],
+          "resposta": "Sim. O ASO deve ser disponibilizado a você, e em papel sempre que você pedir. Se precisar de uma nova via, é só solicitar ao serviço de saúde da empresa.",
+          "fonte": "NR-7 (OFICIAL)"
+        },
+        {
+          "id": "SO-Q019",
+          "titulo": "Fui considerado inapto. O que acontece?",
+          "variacoes": [
+            "deu inapto no exame",
+            "não passei no exame",
+            "inapto para a função"
+          ],
+          "resposta": "Entendemos que essa notícia pode preocupar. Inapto quer dizer que, naquele momento, a função não é adequada para a sua condição de saúde. O médico do trabalho explica o motivo a você e orienta os próximos passos, como tratamento, adaptação da atividade ou encaminhamento. Para dúvidas sobre afastamento e benefícios, o Especialista em Direitos e Benefícios pode ajudar.",
+          "fonte": "NR-7 (OFICIAL); Orientação de saúde ocupacional (INTERNO)"
+        },
+        {
+          "id": "SO-Q020",
+          "titulo": "Posso pedir os resultados dos meus exames?",
+          "variacoes": [
+            "quero ver meu exame",
+            "resultado da audiometria",
+            "cópia dos exames"
+          ],
+          "resposta": "Sim. Os resultados dos exames são seus, e o médico deve informar a você o resultado e o que ele significa. Para pedir uma cópia, procure o serviço de saúde da empresa. Por segurança, os resultados não são enviados pelo chat.",
+          "fonte": "NR-7 (OFICIAL); Orientação de saúde ocupacional (INTERNO)"
+        },
+        {
+          "id": "SO-Q021",
+          "titulo": "Como sei a data do meu próximo exame?",
+          "variacoes": [
+            "quando vence meu exame",
+            "meu periódico está atrasado",
+            "data do exame"
+          ],
+          "resposta": "É só perguntar aqui no chat. A data é calculada a partir do último exame registrado e da periodicidade exigida pelo seu cargo. Se a data mostrada não bater com o que você lembra, por favor, avise o serviço de saúde para conferir o registro.",
+          "fonte": "Regra de lembretes do SinergIA (INTERNO)"
+        },
+        {
+          "id": "SO-Q022",
+          "titulo": "Quando vou ser lembrado do meu exame?",
+          "variacoes": [
+            "aviso de exame",
+            "lembrete do periódico",
+            "vão me avisar do exame?"
+          ],
+          "resposta": "Você recebe um lembrete 30, 15 e 3 dias antes da data prevista do exame. Durante férias ou afastamento confirmado, nenhum lembrete é enviado: os pendentes são reagendados para o dia do seu retorno.",
+          "fonte": "Regra de lembretes do SinergIA (INTERNO)"
+        },
+        {
+          "id": "SO-Q023",
+          "titulo": "Não vou poder ir ao exame agendado. O que faço?",
+          "variacoes": [
+            "remarcar exame",
+            "perdi o exame",
+            "faltei no exame periódico"
+          ],
+          "resposta": "Sem problema. Por favor, avise o serviço de saúde e o seu gestor o quanto antes para remarcar. Manter os exames em dia é importante para acompanhar a sua saúde e para que você siga apto para a sua atividade.",
+          "fonte": "Orientação de saúde ocupacional (INTERNO)"
+        },
+        {
+          "id": "SO-Q056",
+          "titulo": "Fiquei afastado menos de 30 dias. Preciso de exame de retorno?",
+          "variacoes": [
+            "atestado de poucos dias",
+            "voltei de atestado curto",
+            "afastamento de uma semana precisa de exame"
+          ],
+          "resposta": "Não, em regra. O exame de retorno é obrigatório quando o afastamento por doença ou acidente é de 30 dias ou mais. Em afastamentos menores, você volta normalmente; se ainda tiver sintomas ou limitações, procure o serviço de saúde antes de retomar atividades de risco.",
+          "fonte": "NR-7 (OFICIAL)"
+        }
+      ]
+    },
+    {
+      "titulo": "3. Vacinação",
+      "perguntas": [
+        {
+          "id": "SO-Q024",
+          "titulo": "Quais vacinas um adulto deve manter em dia?",
+          "variacoes": [
+            "vacinas de adulto",
+            "carteira de vacinação",
+            "que vacina eu preciso tomar"
+          ],
+          "resposta": "O Calendário Nacional de Vacinação do adulto inclui, entre outras:\n• dupla adulto (difteria e tétano), com reforço a cada 10 anos;\n• hepatite B, em três doses, para quem não tem o esquema completo;\n• febre amarela, conforme a recomendação para a sua idade e região;\n• tríplice viral (sarampo, caxumba e rubéola), conforme a idade;\n• gripe (influenza), nas campanhas anuais, para os grupos indicados. Essas vacinas estão disponíveis de graça nas unidades de saúde do SUS. Para saber o que falta para você, leve a sua carteira de vacinação a uma unidade de saúde ou ao serviço de saúde da empresa.",
+          "fonte": "Calendário Nacional de Vacinação do adulto, Ministério da Saúde (OFICIAL)"
+        },
+        {
+          "id": "SO-Q025",
+          "titulo": "A empresa faz campanha de vacinação?",
+          "variacoes": [
+            "vacina da gripe na empresa",
+            "quando é a campanha",
+            "vacinação no trabalho"
+          ],
+          "resposta": "Sim. O serviço de saúde organiza campanhas de vacinação, como a da gripe, geralmente no período em que o Ministério da Saúde realiza a campanha nacional. As datas e os locais de cada campanha aparecem aqui no chat, e você recebe um lembrete antes.",
+          "fonte": "PCMSO da empresa (INTERNO)"
+        },
+        {
+          "id": "SO-Q026",
+          "titulo": "Sou obrigado a tomar a vacina da campanha da empresa?",
+          "variacoes": [
+            "posso recusar a vacina",
+            "não quero tomar vacina",
+            "vacina é obrigatória no trabalho?"
+          ],
+          "resposta": "A participação nas campanhas da empresa é voluntária. A exceção é quando o médico do trabalho indica uma vacina como proteção necessária para a sua função, por exemplo, hepatite B para quem tem risco biológico. Nesse caso, se você tiver alguma dúvida ou contraindicação, converse com o serviço de saúde, que é quem pode orientar sobre o seu caso.",
+          "fonte": "PCMSO da empresa (INTERNO); Orientação de saúde ocupacional (INTERNO)"
+        },
+        {
+          "id": "SO-Q027",
+          "titulo": "A vacinação conta como horário de trabalho?",
+          "variacoes": [
+            "vacina no expediente",
+            "preciso sair para vacinar",
+            "vacina fora do horário"
+          ],
+          "resposta": "Nas campanhas organizadas pela empresa, sim: a vacinação é feita durante a jornada. Se a vacina for indicada para a sua função e só estiver disponível fora da empresa, por favor, combine o horário com o seu gestor e o serviço de saúde.",
+          "fonte": "PCMSO da empresa (INTERNO)"
+        },
+        {
+          "id": "SO-Q028",
+          "titulo": "Tomei uma vacina fora da empresa. Preciso avisar?",
+          "variacoes": [
+            "registrar vacina",
+            "vacinei no posto",
+            "atualizar minha carteira de vacina"
+          ],
+          "resposta": "Sim, se for uma vacina indicada para a sua função ou de uma campanha da empresa. Por favor, apresente o comprovante ao serviço de saúde para que a dose seja registrada. Assim, você não recebe lembretes de uma dose que já tomou. Não envie o comprovante pelo chat.",
+          "fonte": "Orientação de saúde ocupacional (INTERNO)"
+        },
+        {
+          "id": "SO-Q029",
+          "titulo": "Quando vou ser lembrado de uma vacina ou campanha?",
+          "variacoes": [
+            "aviso da campanha de vacina",
+            "lembrete de vacina",
+            "próxima dose"
+          ],
+          "resposta": "Você recebe um lembrete 7 dias e 1 dia antes da campanha ou da data prevista para a próxima dose. Durante férias ou afastamento confirmado, o lembrete é reagendado para o dia do seu retorno.",
+          "fonte": "Regra de lembretes do SinergIA (INTERNO)"
+        },
+        {
+          "id": "SO-Q030",
+          "titulo": "Senti uma reação depois da vacina. O que faço?",
+          "variacoes": [
+            "braço doendo depois da vacina",
+            "febre depois da vacina",
+            "reação da vacina"
+          ],
+          "resposta": "Reações leves, como dor no local, vermelhidão e febre baixa, costumam passar em poucos dias. Se os sintomas forem fortes, durarem mais ou se você tiver falta de ar, inchaço no rosto ou manchas pelo corpo, procure atendimento de saúde imediatamente. Avise também o serviço de saúde da empresa.",
+          "fonte": "Calendário Nacional de Vacinação do adulto, Ministério da Saúde (OFICIAL); Orientação de saúde ocupacional (INTERNO)"
+        }
+      ]
+    },
+    {
+      "titulo": "4. Campanhas e eventos de saúde",
+      "perguntas": [
+        {
+          "id": "SO-Q031",
+          "titulo": "O que é a SIPAT?",
+          "variacoes": [
+            "semana de prevenção",
+            "o que acontece na SIPAT",
+            "SIPAT é obrigatória?"
+          ],
+          "resposta": "A SIPAT é a Semana Interna de Prevenção de Acidentes do Trabalho, promovida todo ano pela CIPA com o SESMT. Ela traz palestras, atividades e orientações sobre segurança, saúde e bem-estar. A participação é feita durante a jornada e conta como horário de trabalho.",
+          "fonte": "NR-5 (OFICIAL); PCMSO da empresa (INTERNO)"
+        },
+        {
+          "id": "SO-Q032",
+          "titulo": "Que outros eventos de saúde a empresa oferece?",
+          "variacoes": [
+            "palestras de saúde",
+            "campanhas de saúde",
+            "eventos de bem-estar"
+          ],
+          "resposta": "Além da SIPAT e das campanhas de vacinação, o serviço de saúde organiza palestras e campanhas sobre temas como saúde mental, ergonomia, prevenção de doenças e hábitos saudáveis, além da ginástica laboral. Os eventos da sua área aparecem aqui no chat.",
+          "fonte": "PCMSO da empresa (INTERNO)"
+        },
+        {
+          "id": "SO-Q033",
+          "titulo": "Quando vou ser lembrado de um evento?",
+          "variacoes": [
+            "aviso de palestra",
+            "lembrete da SIPAT",
+            "quando é o próximo evento"
+          ],
+          "resposta": "Você recebe um lembrete 7 dias e 1 dia antes do evento. Os eventos podem ser para toda a empresa ou só para a sua área. Durante férias ou afastamento confirmado, nenhum lembrete é enviado.",
+          "fonte": "Regra de lembretes do SinergIA (INTERNO)"
+        },
+        {
+          "id": "SO-Q034",
+          "titulo": "Como funciona a ginástica laboral?",
+          "variacoes": [
+            "alongamento no trabalho",
+            "ginástica no expediente",
+            "pausa para alongar"
+          ],
+          "resposta": "A ginástica laboral são exercícios curtos de alongamento e aquecimento feitos durante a jornada, que ajudam a prevenir dores e lesões. Para horários e orientações de pausas, o Especialista em Pausas pode ajudar.",
+          "fonte": "NR-17 (OFICIAL); PCMSO da empresa (INTERNO)"
+        }
+      ]
+    },
+    {
+      "titulo": "5. Prevenção no dia a dia",
+      "perguntas": [
+        {
+          "id": "SO-Q035",
+          "titulo": "Como sei quais são os riscos do meu trabalho?",
+          "variacoes": [
+            "riscos da minha função",
+            "o que pode me fazer mal no trabalho",
+            "mapa de riscos"
+          ],
+          "resposta": "Os riscos de cada atividade são avaliados no PGR e orientados pelo TST. No dia a dia, você também pode consultar o mapa de riscos do seu setor e perguntar ao TST ou à CIPA. Os exames e os EPIs do seu cargo foram definidos a partir desses riscos.",
+          "fonte": "NR-1 (OFICIAL); Orientação de saúde ocupacional (INTERNO)"
+        },
+        {
+          "id": "SO-Q036",
+          "titulo": "Como levantar e carregar peso sem me machucar?",
+          "variacoes": [
+            "carregar caixa",
+            "dor nas costas ao levantar peso",
+            "postura para levantar"
+          ],
+          "resposta": "Algumas dicas ajudam muito:\n• aproxime-se da carga e mantenha-a junto ao corpo;\n• dobre os joelhos e mantenha as costas retas, fazendo a força com as pernas;\n• evite girar o tronco com a carga: vire o corpo todo, mexendo os pés;\n• use os carrinhos e equipamentos disponíveis e peça ajuda para cargas pesadas ou volumosas. Se sentir dor ao carregar peso, interrompa a atividade e avise o seu gestor.",
+          "fonte": "NR-17 (OFICIAL); Orientação de saúde ocupacional (INTERNO)"
+        },
+        {
+          "id": "SO-Q037",
+          "titulo": "Trabalho muito tempo em pé. Como me cuidar?",
+          "variacoes": [
+            "dor nas pernas",
+            "cansaço de ficar em pé",
+            "inchaço nos pés"
+          ],
+          "resposta": "Alterne o apoio entre as pernas, use calçados confortáveis e adequados, aproveite as pausas para sentar e movimentar as pernas e beba água ao longo do dia. Se as dores ou o inchaço forem frequentes, procure o serviço de saúde.",
+          "fonte": "NR-17 (OFICIAL); Orientação de saúde ocupacional (INTERNO)"
+        },
+        {
+          "id": "SO-Q038",
+          "titulo": "Trabalho com frio ou na câmara fria. Que cuidados devo ter?",
+          "variacoes": [
+            "câmara fria",
+            "mão gelada",
+            "trabalho no frio"
+          ],
+          "resposta": "Use sempre a vestimenta e as luvas térmicas indicadas para o seu cargo e mantenha-as secas. Respeite as pausas de recuperação térmica, entrando em um ambiente aquecido. Se sentir dormência, formigamento, tremores fortes ou mudança de cor na pele, saia do frio e avise o seu gestor. Para dúvidas sobre o EPI, o Especialista em EPI pode ajudar.",
+          "fonte": "CLT art. 253 (OFICIAL); Orientação de saúde ocupacional (INTERNO)"
+        },
+        {
+          "id": "SO-Q039",
+          "titulo": "Trabalho em ambiente quente. Que cuidados devo ter?",
+          "variacoes": [
+            "calor no trabalho",
+            "passando mal de calor",
+            "desidratação"
+          ],
+          "resposta": "Beba água com frequência, mesmo sem sentir sede, use roupas leves quando permitido e faça pausas em local fresco. Tontura, dor de cabeça, náusea ou cansaço extremo são sinais de alerta: pare a atividade, vá para um lugar fresco e avise o seu gestor.",
+          "fonte": "Orientação de saúde ocupacional (INTERNO)"
+        },
+        {
+          "id": "SO-Q040",
+          "titulo": "Como proteger a minha audição?",
+          "variacoes": [
+            "barulho no trabalho",
+            "zumbido no ouvido",
+            "ruído"
+          ],
+          "resposta": "Use o protetor auricular durante todo o tempo de exposição ao ruído: tirá-lo, mesmo por pouco tempo, reduz muito a proteção. Faça a audiometria nas datas previstas. Se notar zumbido, ouvido abafado ou dificuldade para ouvir, procure o serviço de saúde.",
+          "fonte": "NR-7, Anexo II (OFICIAL); Orientação de saúde ocupacional (INTERNO)"
+        },
+        {
+          "id": "SO-Q041",
+          "titulo": "O que é LER/DORT?",
+          "variacoes": [
+            "lesão por esforço repetitivo",
+            "tendinite",
+            "dor no punho do trabalho"
+          ],
+          "resposta": "LER/DORT são lesões e distúrbios de músculos, tendões e nervos ligados ao trabalho, principalmente a movimentos repetitivos, posturas forçadas, esforço excessivo e falta de pausas. A prevenção passa por pausas, alongamento, boa postura, organização das tarefas e uso correto de ferramentas e equipamentos.",
+          "fonte": "NR-17 (OFICIAL); Orientação de saúde ocupacional (INTERNO)"
+        },
+        {
+          "id": "SO-Q042",
+          "titulo": "Estou sentindo dor que não passa. O que faço?",
+          "variacoes": [
+            "dor no braço",
+            "dor nas costas",
+            "formigamento na mão"
+          ],
+          "resposta": "Por favor, não espere a dor piorar. Dor, formigamento, dormência ou perda de força que não passam com o descanso precisam ser avaliados. Procure o serviço de saúde da empresa, que é quem pode avaliar e orientar você. Avise também o seu gestor se a dor atrapalhar a atividade. Por aqui, não é possível dar diagnóstico.",
+          "fonte": "Orientação de saúde ocupacional (INTERNO)"
+        },
+        {
+          "id": "SO-Q043",
+          "titulo": "Como cuidar do sono e da energia, principalmente em turnos?",
+          "variacoes": [
+            "trabalho à noite",
+            "dormir mal",
+            "cansaço no turno"
+          ],
+          "resposta": "Tente manter horários regulares de sono, mesmo nas folgas, e um quarto escuro e silencioso para dormir de dia. Evite café e bebidas energéticas perto da hora de dormir e prefira refeições leves no turno da noite. Se o cansaço for constante, procure o serviço de saúde.",
+          "fonte": "Orientação de saúde ocupacional (INTERNO)"
+        },
+        {
+          "id": "SO-Q057",
+          "titulo": "Como cuidar da hidratação e da alimentação no trabalho?",
+          "variacoes": [
+            "beber água no trabalho",
+            "comer bem no turno",
+            "tontura por ficar sem comer"
+          ],
+          "resposta": "Beba água ao longo do turno, mesmo sem sede, principalmente em ambientes quentes ou com esforço físico. Faça as refeições no intervalo, sem pular, e prefira refeições leves. Tontura, fraqueza ou dor de cabeça frequentes são motivo para procurar o serviço de saúde.",
+          "fonte": "Orientação de saúde ocupacional (INTERNO)"
+        },
+        {
+          "id": "SO-Q058",
+          "titulo": "Estou grávida. Preciso avisar o serviço de saúde?",
+          "variacoes": [
+            "gestante no trabalho",
+            "grávida pode trabalhar na câmara fria",
+            "gravidez e atividade insalubre"
+          ],
+          "resposta": "Sim, é importante avisar o RH e o serviço de saúde assim que possível. A gestante deve ser afastada de atividades insalubres, e o médico do trabalho avalia se é preciso adaptar a sua função durante a gestação. Direitos como estabilidade e licença-maternidade estão na base de Direitos e Benefícios.",
+          "fonte": "CLT art. 394-A (OFICIAL); NR-7 (OFICIAL)"
+        }
+      ]
+    },
+    {
+      "titulo": "6. Saúde mental e riscos psicossociais",
+      "perguntas": [
+        {
+          "id": "SO-Q044",
+          "titulo": "O que são riscos psicossociais?",
+          "variacoes": [
+            "saúde mental no trabalho",
+            "estresse do trabalho",
+            "o que é risco psicossocial"
+          ],
+          "resposta": "São fatores da organização e das relações de trabalho que podem afetar a saúde mental, como sobrecarga, metas excessivas, jornadas longas, pouca autonomia, falta de apoio, conflitos e assédio. Desde 26/05/2026, a NR-1 exige que a empresa identifique esses fatores no gerenciamento de riscos (PGR) e adote medidas de prevenção.",
+          "fonte": "NR-1 (OFICIAL)"
+        },
+        {
+          "id": "SO-Q045",
+          "titulo": "Estou estressado ou sobrecarregado. O que posso fazer?",
+          "variacoes": [
+            "não estou dando conta",
+            "ansiedade no trabalho",
+            "muita pressão"
+          ],
+          "resposta": "Obrigado por compartilhar. Sentir-se assim não é fraqueza, e você não precisa passar por isso sozinho. Alguns caminhos:\n• converse com o seu gestor sobre a carga de trabalho e as prioridades;\n• procure o serviço de saúde da empresa, que pode orientar e encaminhar para apoio;\n• use as pausas para descansar de verdade e cuide do sono. Se os sintomas forem fortes ou durarem semanas, procure um profissional de saúde.",
+          "fonte": "NR-1 (OFICIAL); Orientação de saúde ocupacional (INTERNO)"
+        },
+        {
+          "id": "SO-Q046",
+          "titulo": "O que é burnout?",
+          "variacoes": [
+            "esgotamento",
+            "síndrome de burnout",
+            "estou esgotado"
+          ],
+          "resposta": "Burnout é um esgotamento ligado ao trabalho, com cansaço extremo, distanciamento ou irritação com as tarefas e sensação de não dar conta. Só um profissional de saúde pode avaliar se é esse o caso. Se você se identifica com esses sinais, por favor, procure o serviço de saúde da empresa ou um médico.",
+          "fonte": "Orientação de saúde ocupacional (INTERNO)"
+        },
+        {
+          "id": "SO-Q047",
+          "titulo": "Estou sofrendo assédio no trabalho. O que faço?",
+          "variacoes": [
+            "assédio moral",
+            "assédio sexual",
+            "me humilham no trabalho",
+            "denunciar assédio"
+          ],
+          "resposta": "Sentimos muito que você esteja passando por isso. Você pode relatar a situação pelo canal de denúncias da empresa, que garante sigilo, ou procurar a CIPA ou o RH. Se puder, anote datas, locais e pessoas que presenciaram. Retaliação contra quem denuncia não é permitida. Se você estiver em perigo, procure ajuda imediatamente.",
+          "fonte": "NR-5 (OFICIAL); Lei nº 14.457/2022 (OFICIAL); Orientação de saúde ocupacional (INTERNO)"
+        },
+        {
+          "id": "SO-Q048",
+          "titulo": "Preciso de ajuda agora, não estou bem.",
+          "variacoes": [
+            "quero conversar com alguém",
+            "estou em crise",
+            "não aguento mais"
+          ],
+          "resposta": "Você não está sozinho. Se estiver em perigo ou pensando em se machucar, ligue agora para o SAMU (192) ou vá ao pronto-socorro mais próximo. Para conversar com alguém a qualquer hora, o CVV atende de graça pelo telefone 188, 24 horas. Na empresa, procure o serviço de saúde ou uma pessoa de confiança.",
+          "fonte": "Orientação de saúde ocupacional (INTERNO); CVV — Centro de Valorização da Vida (OFICIAL)"
+        },
+        {
+          "id": "SO-Q059",
+          "titulo": "A empresa precisa cuidar dos riscos psicossociais?",
+          "variacoes": [
+            "NR-1 saúde mental",
+            "riscos psicossociais são obrigatórios",
+            "a empresa avalia estresse no trabalho"
+          ],
+          "resposta": "Sim. Desde maio de 2026, os riscos psicossociais (como sobrecarga, pressão excessiva, conflitos e assédio) fazem parte do gerenciamento de riscos ocupacionais exigido pela NR-1. A empresa deve identificar esses riscos, avaliar e adotar medidas de prevenção. Você pode contribuir relatando situações por aqui ou à CIPA.",
+          "fonte": "NR-1 (OFICIAL)"
+        },
+        {
+          "id": "SO-Q060",
+          "titulo": "Como posso cuidar da saúde mental no dia a dia?",
+          "variacoes": [
+            "dicas de saúde mental",
+            "como lidar com ansiedade no trabalho",
+            "como desligar do trabalho"
+          ],
+          "resposta": "Algumas atitudes ajudam: faça as pausas, durma bem, mantenha atividade física, converse com pessoas de confiança e respeite seus limites. Quando a sobrecarga for constante, fale com o gestor ou com o RH para reorganizar demandas. Se o sofrimento estiver forte, procure o serviço de saúde ou o CVV (188), que atende 24 horas.",
+          "fonte": "Orientação de saúde ocupacional (INTERNO)"
+        }
+      ]
+    },
+    {
+      "titulo": "7. Acidente ou mal-estar no trabalho",
+      "perguntas": [
+        {
+          "id": "SO-Q049",
+          "titulo": "Sofri um acidente ou estou passando mal no trabalho. O que faço?",
+          "variacoes": [
+            "me machuquei",
+            "cortei a mão",
+            "estou tonto",
+            "acidente de trabalho"
+          ],
+          "resposta": "Por favor, interrompa a atividade agora e procure o seu gestor, o TST ou o serviço de saúde da empresa. Se for uma emergência, acione o socorro imediatamente: SAMU 192 ou Bombeiros 193. Depois do atendimento, o acidente precisa ser comunicado à empresa, mesmo que pareça pequeno.",
+          "fonte": "Orientação de saúde ocupacional (INTERNO)"
+        },
+        {
+          "id": "SO-Q050",
+          "titulo": "O que é a CAT?",
+          "variacoes": [
+            "comunicação de acidente de trabalho",
+            "a empresa vai abrir CAT",
+            "preciso de CAT"
+          ],
+          "resposta": "A CAT (Comunicação de Acidente de Trabalho) é o registro do acidente ou da doença relacionada ao trabalho na Previdência Social. A empresa deve emitir a CAT até o primeiro dia útil seguinte ao acidente e, em caso de morte, imediatamente. Se a empresa não emitir, a CAT pode ser feita pelo próprio trabalhador, por dependentes, pelo sindicato, pelo médico que atendeu ou por autoridade pública. Para direitos ligados ao acidente, o Especialista em Direitos e Benefícios pode ajudar.",
+          "fonte": "Lei nº 8.213/1991, art. 22 (OFICIAL)"
+        },
+        {
+          "id": "SO-Q051",
+          "titulo": "Acho que tenho uma doença causada pelo trabalho. O que faço?",
+          "variacoes": [
+            "doença ocupacional",
+            "o trabalho me deixou doente",
+            "doença do trabalho"
+          ],
+          "resposta": "Procure o serviço de saúde da empresa e conte o que está sentindo e em que atividade. O médico avalia a relação com o trabalho, orienta o tratamento e, se for o caso, a emissão da CAT. A empresa também deve analisar a situação para evitar que aconteça com outras pessoas.",
+          "fonte": "NR-1 (OFICIAL); NR-7 (OFICIAL); Lei nº 8.213/1991 (OFICIAL)"
+        },
+        {
+          "id": "SO-Q052",
+          "titulo": "Vi uma situação de risco à saúde. Como aviso?",
+          "variacoes": [
+            "risco no setor",
+            "condição insegura",
+            "denunciar risco"
+          ],
+          "resposta": "Obrigado por cuidar de todos. Avise o seu gestor, o TST ou um membro da CIPA. Se o risco for grave e imediato, afaste-se da situação e não retome a atividade até que seja avaliada. O objetivo é prevenir, não punir ninguém.",
+          "fonte": "NR-1 (OFICIAL); NR-5 (OFICIAL)"
+        },
+        {
+          "id": "SO-Q061",
+          "titulo": "Quem emite a CAT e em quanto tempo?",
+          "variacoes": [
+            "prazo da CAT",
+            "a empresa não emitiu a CAT",
+            "posso emitir a CAT"
+          ],
+          "resposta": "A empresa deve comunicar o acidente de trabalho ou a doença ocupacional ao INSS até o primeiro dia útil seguinte e, em caso de morte, imediatamente. Se a empresa não emitir, a CAT pode ser feita pelo próprio trabalhador, por seus dependentes, pelo sindicato, pelo médico que o atendeu ou por autoridade pública.",
+          "fonte": "Lei nº 8.213/1991, art. 22 (OFICIAL)"
+        },
+        {
+          "id": "SO-Q062",
+          "titulo": "Quase sofri um acidente. Preciso avisar?",
+          "variacoes": [
+            "quase acidente",
+            "escorreguei mas não me machuquei",
+            "incidente sem lesão"
+          ],
+          "resposta": "Sim. O quase acidente mostra um risco real que ainda não machucou ninguém. Avise o seu gestor ou o TST, ou registre aqui no chat, descrevendo o local e o que aconteceu. Esse aviso ajuda a corrigir o problema antes que alguém se machuque.",
+          "fonte": "NR-1 (OFICIAL); Orientação de saúde ocupacional (INTERNO)"
+        }
+      ]
+    },
+    {
+      "titulo": "8. O que esta base não faz",
+      "perguntas": [
+        {
+          "id": "SO-Q053",
+          "titulo": "O chat pode me dar um diagnóstico ou indicar remédio?",
+          "variacoes": [
+            "o que eu tenho",
+            "qual remédio tomar",
+            "o chat é médico?"
+          ],
+          "resposta": "Não. O chat orienta sobre saúde no trabalho, exames, vacinas e prevenção, mas não faz diagnóstico nem indica medicamento. Para isso, procure o serviço de saúde da empresa ou um médico. Em emergência, ligue 192.",
+          "fonte": "Orientação de saúde ocupacional (INTERNO)"
+        },
+        {
+          "id": "SO-Q054",
+          "titulo": "Posso enviar meus exames ou atestados pelo chat?",
+          "variacoes": [
+            "mandar foto do exame",
+            "enviar laudo",
+            "mandar resultado pelo chat"
+          ],
+          "resposta": "Por segurança, não envie resultados de exames, laudos ou receitas pelo chat: são dados de saúde sensíveis. Entregue esses documentos diretamente ao serviço de saúde da empresa. Para atestados de afastamento, siga o procedimento de envio de atestado da empresa.",
+          "fonte": "LGPD, Lei nº 13.709/2018 (OFICIAL); Orientação de saúde ocupacional (INTERNO)"
+        },
+        {
+          "id": "SO-Q055",
+          "titulo": "Como falo com o médico do trabalho?",
+          "variacoes": [
+            "marcar consulta com o médico da empresa",
+            "ambulatório",
+            "serviço de saúde"
+          ],
+          "resposta": "Procure o serviço de saúde da empresa pelo canal de atendimento ou pessoalmente, no horário do ambulatório. Se não souber o caminho, o seu gestor ou o TST podem ajudar. Em emergência, acione o socorro imediatamente.",
+          "fonte": "Orientação de saúde ocupacional (INTERNO)"
+        }
+      ]
+    }
+  ]
+}

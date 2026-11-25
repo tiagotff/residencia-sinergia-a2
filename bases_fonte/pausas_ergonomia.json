@@ -1,0 +1,332 @@
+{
+  "cabecalho": {
+    "Título": "Base de Conhecimento RH: Pausas e Ergonomia",
+    "Código": "KB-RH-ERG-001",
+    "Versão": "2.1",
+    "Vigência": "a partir de 25/11/2026",
+    "Tipo de fonte": "INTERNO",
+    "Fonte": "Recursos Humanos e Segurança do Trabalho (RH/TST) — SinergIA; NR-17 (Ergonomia) e Anexo II (Teleatendimento); CLT arts. 66, 67, 71, 72, 199 e 253; Súmulas 346 e 438 do TST",
+    "Base RAG": "Pausas e Ergonomia (funcionalidade F1)",
+    "Responsável": "Time SinergIA (Base RAG)",
+    "Aprovação": "PENDENTE — validação por Recursos Humanos e TST",
+    "Convenções": "Cada pergunta tem um ID (RH-ERG-Qnnn) no título, uma linha \"Também perguntam\" com variações e uma linha \"Fonte\" que separa norma (OFICIAL) de regra da empresa (INTERNO). Em conflito, a norma prevalece; a regra interna só pode ser mais rigorosa.",
+    "Revisão": "25/11/2026 (v2.1: perguntas 009 a 027); próxima: 25/02/2027"
+  },
+  "secoes": [
+    {
+      "titulo": "1. Conceitos fundamentais e regras de pausas",
+      "perguntas": [
+        {
+          "id": "RH-ERG-Q001",
+          "titulo": "O que é ergonomia no trabalho?",
+          "variacoes": [
+            "para que serve a ergonomia",
+            "o que significa ergonomia e prevenção de LER/DORT"
+          ],
+          "resposta": "É a disciplina que adapta as condições de trabalho (postura, ritmo, mobiliário) às características físicas e cognitivas do trabalhador, visando segurança, prevenção de LER/DORT e bem-estar.",
+          "fonte": "NR-17 (OFICIAL)"
+        },
+        {
+          "id": "RH-ERG-Q002",
+          "titulo": "Qual é a regra de tempo e frequência das pausas?",
+          "variacoes": [
+            "de quanto em quanto tempo devo fazer pausa",
+            "pausa precisa ser compensada no fim do expediente",
+            "qual a regra de pausa para teleatendimento e computador",
+            "quantas pausas posso fazer por dia",
+            "a pausa pode ser no horário de almoço",
+            "o intervalo do almoço conta como pausa"
+          ],
+          "resposta": "• Trabalho em Computador (Geral): Recomenda-se pausa de 5 a 10 minutos a cada 50 minutos de trabalho contínuo.\n• Teleatendimento / Call Center: Pausas obrigatórias por lei (NR-17), com duas pausas de 10 minutos fora do horário de refeição.\n• Importante: As pausas integram a jornada normal e não devem ser compensadas ao final do expediente.",
+          "fonte": "NR-17 (OFICIAL); Política Interna RH/TST (INTERNO)"
+        },
+        {
+          "id": "RH-ERG-Q003",
+          "titulo": "O que é descanso visual e como aplicar a Regra 20-20-20?",
+          "variacoes": [
+            "como evitar fadiga ocular na frente do computador",
+            "como funciona a regra 20 20 20"
+          ],
+          "resposta": "Técnica para evitar a fadiga ocular: a cada 20 minutos de uso de tela, olhe para um ponto a 6 metros (20 pés) de distância durante 20 segundos. Pisque conscientemente e lubrifique os olhos conforme orientação médica.",
+          "fonte": "Política Interna RH/TST (INTERNO)"
+        },
+        {
+          "id": "RH-ERG-Q009",
+          "titulo": "Qual é o intervalo para refeição e descanso?",
+          "variacoes": [
+            "quanto tempo tenho de almoço",
+            "intervalo de almoço é obrigatório",
+            "quanto tempo de intervalo na jornada de 6 horas"
+          ],
+          "resposta": "• Jornada acima de 6 horas: intervalo de no mínimo 1 hora e, em regra, no máximo 2 horas.\n• Jornada acima de 4 e até 6 horas: intervalo de 15 minutos.\n• O intervalo para refeição não é contado como tempo de trabalho. Acordo ou convenção coletiva pode reduzir o intervalo de jornadas acima de 6 horas para no mínimo 30 minutos.",
+          "fonte": "CLT arts. 71 e 611-A (OFICIAL)"
+        },
+        {
+          "id": "RH-ERG-Q010",
+          "titulo": "A pausa pode ser feita no horário do almoço?",
+          "variacoes": [
+            "o intervalo do almoço conta como pausa",
+            "meu chefe disse que o almoço já é a pausa",
+            "pausa junto com a refeição"
+          ],
+          "resposta": "Não. O intervalo para refeição e as pausas de descanso são coisas diferentes. O intervalo de refeição serve para alimentação e repouso e não conta como jornada. As pausas de descanso acontecem ao longo do trabalho para recuperar o corpo e a mente: no teleatendimento, a NR-17 exige que sejam fora do intervalo de refeição, e a política interna aplica a mesma regra às demais pausas. Se tiver dúvida no seu setor, fale com o RH.",
+          "fonte": "CLT art. 71 (OFICIAL); NR-17, Anexo II (OFICIAL); Política Interna RH/TST (INTERNO)"
+        },
+        {
+          "id": "RH-ERG-Q011",
+          "titulo": "Quanto tempo de descanso tenho entre um dia de trabalho e outro?",
+          "variacoes": [
+            "intervalo entre jornadas",
+            "quantas horas de descanso entre turnos",
+            "folga semanal obrigatória"
+          ],
+          "resposta": "• Entre duas jornadas: no mínimo 11 horas consecutivas de descanso.\n• Descanso semanal: 24 horas consecutivas, preferencialmente aos domingos.\n• No comércio, a escala deve garantir que a folga semanal caia no domingo pelo menos uma vez a cada três semanas.",
+          "fonte": "CLT arts. 66 e 67 (OFICIAL); Lei nº 10.101/2000, art. 6º (OFICIAL)"
+        },
+        {
+          "id": "RH-ERG-Q012",
+          "titulo": "Trabalho na câmara fria. Tenho pausa especial?",
+          "variacoes": [
+            "pausa térmica",
+            "intervalo para recuperação térmica",
+            "a cada quanto tempo saio da câmara fria"
+          ],
+          "resposta": "Sim. Quem trabalha dentro de câmaras frias, ou movimenta mercadorias entre o ambiente normal e o frio, tem direito a 20 minutos de repouso a cada 1 hora e 40 minutos de trabalho contínuo. Essa pausa conta como tempo de trabalho e deve ser feita fora do frio. O direito vale para ambientes artificialmente frios (abaixo de 15 °C, 12 °C ou 10 °C, conforme a zona climática); o TST informa o limite da sua unidade.",
+          "fonte": "CLT art. 253 (OFICIAL); Súmula 438 do TST (OFICIAL)"
+        },
+        {
+          "id": "RH-ERG-Q013",
+          "titulo": "Trabalho digitando o tempo todo. Tenho pausa específica?",
+          "variacoes": [
+            "pausa para digitação",
+            "digitador tem intervalo",
+            "trabalho com digitação contínua"
+          ],
+          "resposta": "Sim. Em serviços permanentes de digitação, a cada 90 minutos de trabalho há direito a 10 minutos de repouso, que não são descontados da jornada. Nesses intervalos, levante-se, alongue punhos e antebraços e descanse a visão.",
+          "fonte": "CLT art. 72 (OFICIAL); Súmula 346 do TST (OFICIAL)"
+        },
+        {
+          "id": "RH-ERG-Q014",
+          "titulo": "Como funcionam as pausas no teleatendimento?",
+          "variacoes": [
+            "pausas do call center",
+            "regra de pausa do SAC",
+            "intervalo do atendimento por telefone"
+          ],
+          "resposta": "• Duas pausas de descanso de 10 minutos contínuos cada, fora do intervalo de refeição.\n• As pausas são feitas depois dos primeiros 60 minutos e antes dos últimos 60 minutos da jornada.\n• Intervalo de 20 minutos para repouso e alimentação.\n• Após um atendimento com ameaça, abuso verbal ou agressão, é possível sair do posto para se recuperar e comunicar o ocorrido ao supervisor.",
+          "fonte": "NR-17, Anexo II (OFICIAL)"
+        },
+        {
+          "id": "RH-ERG-Q015",
+          "titulo": "Trabalho em pé. Tenho direito a um assento para descansar?",
+          "variacoes": [
+            "posso sentar durante o trabalho",
+            "trabalho em pé o dia todo",
+            "cadeira para quem trabalha em pé"
+          ],
+          "resposta": "Sim. Quando o trabalho é feito em pé, devem existir assentos para descanso em locais que todos possam usar durante as pausas. Também vale alternar o apoio entre as pernas e, se houver, usar o apoio para os pés e o tapete antifadiga.",
+          "fonte": "NR-17 (OFICIAL); CLT art. 199 (OFICIAL)"
+        }
+      ]
+    },
+    {
+      "titulo": "2. Direitos e responsabilidades",
+      "perguntas": [
+        {
+          "id": "RH-ERG-Q004",
+          "titulo": "Quais são as obrigações da empresa?",
+          "variacoes": [
+            "o que a empresa precisa fornecer de ergonomia",
+            "a empresa é obrigada a dar cadeira ergonômica e apoio para pés"
+          ],
+          "resposta": "• Garantir e respeitar as pausas previstas na NR-17.\n• Disponibilizar mobiliário ergonômico e ajustável (cadeiras com regulagem, apoio para pés, suporte de tela).\n• Promover treinamentos periódicos de prevenção e postura.",
+          "fonte": "NR-17 (OFICIAL)"
+        },
+        {
+          "id": "RH-ERG-Q005",
+          "titulo": "Quais são as obrigações do colaborador?",
+          "variacoes": [
+            "qual meu dever em relação à ergonomia e pausas",
+            "preciso avisar se sentir dor no posto de trabalho"
+          ],
+          "resposta": "• Cumprir integralmente as pausas programadas.\n• Ajustar e utilizar corretamente os equipamentos ergonômicos fornecidos.\n• Reportar dores ou desconfortos ao RH/TST imediatamente.",
+          "fonte": "NR-17 (OFICIAL); Política Interna RH/TST (INTERNO)"
+        },
+        {
+          "id": "RH-ERG-Q016",
+          "titulo": "Meu gestor pode me impedir de fazer a pausa?",
+          "variacoes": [
+            "meu chefe não deixa eu pausar",
+            "gestor mandou pular a pausa",
+            "não consigo fazer pausa porque o setor está cheio"
+          ],
+          "resposta": "As pausas previstas em lei e na política interna não podem ser suprimidas. Se a rotina do setor estiver impedindo a pausa, converse com o seu gestor para reorganizar o horário. Se não resolver, registre aqui no chat ou procure o RH ou o TST: a situação é tratada com sigilo, e fazer a pausa a que você tem direito não gera punição.",
+          "fonte": "NR-17 (OFICIAL); CLT arts. 71, 72 e 253 (OFICIAL); Política Interna RH/TST (INTERNO)"
+        },
+        {
+          "id": "RH-ERG-Q017",
+          "titulo": "Se eu não tirar o intervalo de refeição, recebo algo a mais?",
+          "variacoes": [
+            "almocei em 30 minutos e voltei",
+            "não tive intervalo de almoço",
+            "intervalo suprimido é pago"
+          ],
+          "resposta": "Sim. Quando o intervalo de refeição é suprimido total ou parcialmente, a empresa paga o tempo que faltou com acréscimo de 50% sobre o valor da hora normal. Mesmo assim, o intervalo é um direito à saúde: tire o tempo completo sempre que possível e avise o RH se isso não estiver acontecendo.",
+          "fonte": "CLT art. 71, § 4º (OFICIAL)"
+        },
+        {
+          "id": "RH-ERG-Q018",
+          "titulo": "Posso juntar as pausas e sair mais cedo?",
+          "variacoes": [
+            "acumular pausas",
+            "trocar a pausa por saída antecipada",
+            "fazer todas as pausas de uma vez"
+          ],
+          "resposta": "Não. As pausas existem para interromper o esforço ao longo da jornada; acumuladas, elas perdem o efeito de prevenção. Também não podem ser trocadas por saída antecipada nem compensadas no fim do expediente.",
+          "fonte": "NR-17 (OFICIAL); Política Interna RH/TST (INTERNO)"
+        },
+        {
+          "id": "RH-ERG-Q019",
+          "titulo": "A pausa conta como tempo de trabalho?",
+          "variacoes": [
+            "pausa é descontada da jornada",
+            "pausa entra no banco de horas",
+            "pausa é remunerada"
+          ],
+          "resposta": "• Pausas de descanso (NR-17, digitação e câmara fria): contam como tempo de trabalho e são remuneradas.\n• Intervalo para refeição: não conta como tempo de trabalho.",
+          "fonte": "CLT arts. 71, 72 e 253 (OFICIAL); NR-17, Anexo II (OFICIAL)"
+        },
+        {
+          "id": "RH-ERG-Q020",
+          "titulo": "Como peço uma avaliação ergonômica do meu posto de trabalho?",
+          "variacoes": [
+            "avaliar minha cadeira",
+            "pedir AET",
+            "meu posto de trabalho está ruim"
+          ],
+          "resposta": "Peça aqui no chat, ao seu gestor ou ao TST. A empresa faz uma avaliação ergonômica preliminar do posto e, quando necessário, uma análise ergonômica mais detalhada (AET). Conte o que incomoda: altura da bancada, cadeira, tela, peso, repetição ou ritmo.",
+          "fonte": "NR-17 (OFICIAL); Política Interna RH/TST (INTERNO)"
+        }
+      ]
+    },
+    {
+      "titulo": "3. Guia prático de pausas e alongamentos",
+      "perguntas": [
+        {
+          "id": "RH-ERG-Q006",
+          "titulo": "Como executar os exercícios durante a pausa?",
+          "variacoes": [
+            "quais alongamentos fazer na pausa",
+            "exercícios para pescoço ombros punhos e pausa ativa"
+          ],
+          "resposta": "• Pescoço: Incline suavemente a cabeça para as laterais por 15s de cada lado; encoste o queixo no peito.\n• Ombros: Faça rotações circulares para trás 10 vezes; eleve e solte os ombros.\n• Punhos e Antebraços: Estenda o braço com a palma para fora e puxe os dedos para trás por 15s.\n• Pausa Ativa: Levante-se, caminhe até o bebedouro e faça exercícios de respiração profunda.",
+          "fonte": "Política Interna RH/TST (INTERNO)"
+        },
+        {
+          "id": "RH-ERG-Q021",
+          "titulo": "Como ajustar a cadeira, a mesa e a tela?",
+          "variacoes": [
+            "ajuste da cadeira",
+            "altura do monitor",
+            "postura sentado no computador"
+          ],
+          "resposta": "• Cadeira: pés apoiados no chão ou no apoio para os pés, joelhos mais ou menos na altura do quadril e costas apoiadas no encosto.\n• Braços: cotovelos junto ao corpo, ombros relaxados e punhos retos ao digitar.\n• Tela: a borda de cima na altura dos olhos ou um pouco abaixo, a cerca de um braço de distância.\n• Notebook: use suporte, teclado e mouse externos quando trabalhar por muito tempo.",
+          "fonte": "NR-17 (OFICIAL); Política Interna RH/TST (INTERNO)"
+        },
+        {
+          "id": "RH-ERG-Q022",
+          "titulo": "Como cuidar da postura trabalhando em pé, no caixa ou na bancada?",
+          "variacoes": [
+            "postura no caixa",
+            "dor nas pernas de ficar em pé",
+            "altura da bancada"
+          ],
+          "resposta": "• Alterne o peso entre as pernas e, se houver, apoie um pé no apoio.\n• Trabalhe com os objetos perto do corpo, na altura do cotovelo, evitando torcer o tronco.\n• Use calçado confortável e, se disponível, o tapete antifadiga.\n• Nas pausas, sente-se e movimente tornozelos e pernas.",
+          "fonte": "NR-17 (OFICIAL); Política Interna RH/TST (INTERNO)"
+        },
+        {
+          "id": "RH-ERG-Q023",
+          "titulo": "Como evitar lesões em movimentos repetitivos?",
+          "variacoes": [
+            "trabalho repetitivo",
+            "dor no punho de repetir movimento",
+            "rodízio de tarefas"
+          ],
+          "resposta": "• Mantenha os punhos retos e evite força com a mão dobrada.\n• Quando possível, alterne as tarefas ao longo do turno.\n• Faça as pausas e alongue mãos, punhos e ombros.\n• Use ferramentas afiadas e em bom estado: elas exigem menos força.\n• Formigamento, dor que volta ou perda de força são sinais de alerta: avise o serviço de saúde.",
+          "fonte": "NR-17 (OFICIAL); Política Interna RH/TST (INTERNO)"
+        },
+        {
+          "id": "RH-ERG-Q024",
+          "titulo": "Que alongamentos fazer para pernas e lombar na pausa?",
+          "variacoes": [
+            "alongamento para as costas",
+            "exercício para as pernas",
+            "dor lombar no trabalho"
+          ],
+          "resposta": "• Panturrilha: apoie as mãos na parede, leve uma perna para trás com o calcanhar no chão e segure 15 segundos de cada lado.\n• Coxa: em pé e apoiado, segure o pé atrás do corpo por 15 segundos de cada lado.\n• Lombar: em pé, mãos na cintura, incline o tronco levemente para trás e para os lados, sem forçar.\n• Pare se sentir dor: alongamento não deve doer.",
+          "fonte": "Política Interna RH/TST (INTERNO)"
+        },
+        {
+          "id": "RH-ERG-Q025",
+          "titulo": "Tem algum exercício rápido para aliviar o estresse na pausa?",
+          "variacoes": [
+            "respiração para acalmar",
+            "exercício de 1 minuto",
+            "estou tenso no trabalho"
+          ],
+          "resposta": "Experimente a respiração 4-4-4: inspire pelo nariz contando até 4, segure o ar contando até 4 e solte pela boca contando até 4. Repita por um minuto, com os ombros soltos. Se a tensão for frequente, a base de Saúde Ocupacional tem orientações sobre estresse e apoio.",
+          "fonte": "Política Interna RH/TST (INTERNO)"
+        }
+      ]
+    },
+    {
+      "titulo": "4. Dúvidas frequentes (FAQ)",
+      "perguntas": [
+        {
+          "id": "RH-ERG-Q007",
+          "titulo": "Posso trabalhar sem realizar as pausas?",
+          "variacoes": [
+            "posso pular as pausas para terminar o trabalho antes",
+            "as pausas são obrigatórias",
+            "meu chefe não deixa eu fazer pausa",
+            "o gestor pode proibir a pausa"
+          ],
+          "resposta": "Não. As pausas são obrigatórias para preservação da saúde ocupacional, prevenindo fadiga mental, estresse e lesões físicas.",
+          "fonte": "NR-17 (OFICIAL)"
+        },
+        {
+          "id": "RH-ERG-Q008",
+          "titulo": "O que fazer em caso de dor ou desconforto?",
+          "variacoes": [
+            "senti dor nas costas ou no punho trabalhando o que faço",
+            "como pedir avaliação ergonômica do posto de trabalho"
+          ],
+          "resposta": "Paralise a atividade, notifique o seu gestor imediato e acione a equipe de RH/TST para agendar uma avaliação no posto de trabalho.",
+          "fonte": "Política Interna RH/TST (INTERNO)"
+        },
+        {
+          "id": "RH-ERG-Q026",
+          "titulo": "Quais sinais indicam que preciso procurar ajuda por dor no trabalho?",
+          "variacoes": [
+            "dor que não passa",
+            "formigamento na mão",
+            "sinais de LER"
+          ],
+          "resposta": "Procure o serviço de saúde da empresa se tiver dor que piora com o trabalho ou volta todos os dias, formigamento, dormência, perda de força ou dor que atrapalha o sono. Quanto antes, mais simples o cuidado. Avise também o gestor para avaliar o posto de trabalho.",
+          "fonte": "NR-17 (OFICIAL); Política Interna RH/TST (INTERNO)"
+        },
+        {
+          "id": "RH-ERG-Q027",
+          "titulo": "Ginástica laboral é obrigatória?",
+          "variacoes": [
+            "preciso participar da ginástica laboral",
+            "ginástica no trabalho",
+            "posso não fazer a ginástica laboral"
+          ],
+          "resposta": "A ginástica laboral não é uma exigência da lei, mas é uma ação de prevenção da empresa, recomendada para todos. Ela não substitui as pausas obrigatórias. Se você tiver alguma limitação física, avise o instrutor ou o serviço de saúde para adaptar os exercícios.",
+          "fonte": "Política Interna RH/TST (INTERNO)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,825 @@
+{
+  "cabecalho": {
+    "Título": "Base de Conhecimento EPI",
+    "Versão": "1.3",
+    "Vigência": "a partir de 25/11/2026",
+    "Tipo de fonte": "INTERNO",
+    "Fonte": "Segurança do Trabalho (TST) — SinergIA; NR-6 (Portaria MTP nº 2.175/2022 e ajustes), NR-1, CLT e Súmula 289 do TST",
+    "Base RAG": "EPI (funcionalidades F5, F6)",
+    "Aprovação": "PENDENTE — validação por Técnico de Segurança do Trabalho",
+    "Revisão": "25/11/2026 (v1.3: perguntas 059 a 070 e variações vindas do chat); próxima: 25/02/2027",
+    "Convenções": "Cada pergunta tem um ID (EPI-Qnnn) no título, uma linha \"Também perguntam\" com variações e uma linha \"Fonte\" que separa norma (OFICIAL) de regra da empresa (INTERNO). Em conflito, a norma prevalece; a regra interna só pode ser mais rigorosa. Dados do colaborador (EPIs do cargo, entregas, CA, vida útil, status) NÃO ficam aqui: vêm do banco pelas ferramentas SQL. Tom: cordial, acolhedor e direto.",
+    "Responsável": "Time SinergIA (Base RAG)"
+  },
+  "secoes": [
+    {
+      "titulo": "1. Conceitos básicos",
+      "perguntas": [
+        {
+          "id": "EPI-Q001",
+          "titulo": "O que é EPI?",
+          "variacoes": [
+            "o que significa EPI",
+            "o que conta como equipamento de proteção",
+            "luva e bota são EPI?"
+          ],
+          "resposta": "EPI (Equipamento de Proteção Individual) é todo dispositivo ou produto de uso individual que protege você de riscos à sua segurança e saúde no trabalho. Alguns exemplos são luvas, calçado de segurança, óculos de proteção, protetor auricular e respirador.",
+          "fonte": "NR-6 (OFICIAL)"
+        },
+        {
+          "id": "EPI-Q002",
+          "titulo": "Quando o EPI deve ser usado?",
+          "variacoes": [
+            "em que situação preciso usar EPI",
+            "quando é obrigatório usar equipamento de proteção"
+          ],
+          "resposta": "O EPI é usado quando as medidas de proteção coletiva e as medidas administrativas não são suficientes para eliminar ou controlar o risco, enquanto essas medidas estão sendo implantadas, ou em situações de emergência. O mais importante é: nenhuma atividade de risco deve ser feita sem o EPI adequado. Sua segurança vem em primeiro lugar.",
+          "fonte": "NR-6 (OFICIAL)"
+        },
+        {
+          "id": "EPI-Q003",
+          "titulo": "Por que o EPI é a última medida de proteção?",
+          "variacoes": [
+            "por que a empresa não resolve o risco antes do EPI",
+            "o que vem antes do EPI"
+          ],
+          "resposta": "Boa pergunta! O gerenciamento de riscos segue uma ordem: primeiro, eliminar o risco; depois, reduzi-lo com medidas de proteção coletiva (como proteção em máquinas, ventilação e isolamento de ruído); em seguida, com medidas administrativas ou de organização do trabalho; e, por último, com o EPI. Isso porque o EPI protege apenas quem está usando, e somente enquanto está sendo usado corretamente. Por isso ele complementa as outras medidas, sem substituí-las.",
+          "fonte": "NR-1 (OFICIAL); NR-6 (OFICIAL)"
+        },
+        {
+          "id": "EPI-Q004",
+          "titulo": "O que é o Certificado de Aprovação (CA)?",
+          "variacoes": [
+            "o que é CA do EPI",
+            "número do CA",
+            "certificado do equipamento"
+          ],
+          "resposta": "O CA é o certificado emitido pelo órgão nacional competente em segurança e saúde no trabalho que autoriza a venda e o uso de um modelo de EPI. Todo EPI, nacional ou importado, precisa ter CA. O número fica gravado no próprio equipamento, junto com o nome do fabricante ou importador e o lote.",
+          "fonte": "NR-6 (OFICIAL)"
+        },
+        {
+          "id": "EPI-Q005",
+          "titulo": "Como saber se o CA do meu EPI está válido?",
+          "variacoes": [
+            "meu CA venceu",
+            "onde consulto o CA",
+            "o certificado do meu EPI está em dia?"
+          ],
+          "resposta": "O número do CA está gravado no seu equipamento. O Técnico de Segurança do Trabalho (TST) acompanha a validade, e você recebe um aviso 30 dias antes do vencimento do CA do EPI que usa. Se quiser, também pode consultar o número na consulta pública de CA do Ministério do Trabalho e Emprego.",
+          "fonte": "NR-6 (OFICIAL); Procedimento de troca de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q006",
+          "titulo": "Qual a diferença entre validade do CA e vida útil do EPI?",
+          "variacoes": [
+            "o CA está válido mas o EPI está gasto",
+            "validade do EPI",
+            "prazo de validade do equipamento"
+          ],
+          "resposta": "São duas coisas diferentes. A validade do CA é o prazo em que aquele modelo de EPI pode ser comercializado. Já a vida útil é o tempo durante o qual o equipamento realmente protege, de acordo com o fabricante e as condições de uso. Por isso, um EPI pode precisar de troca antes do vencimento do CA, por exemplo quando está desgastado, danificado ou atinge o número máximo de higienizações indicado pelo fabricante.",
+          "fonte": "NR-6 (OFICIAL)"
+        },
+        {
+          "id": "EPI-Q007",
+          "titulo": "Quem decide qual EPI cada cargo deve usar?",
+          "variacoes": [
+            "quem escolhe o EPI",
+            "por que meu cargo usa esse EPI",
+            "posso escolher outro modelo?"
+          ],
+          "resposta": "A empresa escolhe o EPI de acordo com a atividade e os riscos avaliados no Programa de Gerenciamento de Riscos (PGR). A escolha leva em conta a eficácia necessária, as exigências das normas, o conforto e a adequação a quem vai usar, e a compatibilidade entre EPIs usados ao mesmo tempo. Quando há SESMT, ele participa, e os trabalhadores usuários e a CIPA são ouvidos. Essa decisão cabe ao TST e ao SESMT. Para saber quais EPIs o seu cargo exige, é só perguntar aqui no chat.",
+          "fonte": "NR-6 (OFICIAL)"
+        },
+        {
+          "id": "EPI-Q008",
+          "titulo": "Quando a escolha do EPI é revista?",
+          "variacoes": [
+            "o EPI do meu setor pode mudar",
+            "quando trocam o modelo de EPI"
+          ],
+          "resposta": "A escolha do EPI deve ser revista quando são implantadas novas medidas de prevenção, quando há mudança de tecnologia ou de organização do trabalho, quando o EPI se mostra inadequado, depois de acidentes ou doenças relacionadas ao trabalho, e quando a legislação muda. Se você sentir que o EPI não está protegendo bem, por favor, avise o TST. Sua percepção pode levar a uma melhoria para toda a equipe.",
+          "fonte": "NR-6 (OFICIAL)"
+        },
+        {
+          "id": "EPI-Q009",
+          "titulo": "Posso usar dois EPIs ao mesmo tempo?",
+          "variacoes": [
+            "óculos e máscara juntos",
+            "protetor auricular com capacete",
+            "EPI atrapalha o outro"
+          ],
+          "resposta": "Sim, quando a atividade exige. A empresa deve garantir que os EPIs usados juntos sejam compatíveis, ou seja, que um não reduza a proteção do outro (por exemplo, óculos que atrapalham a vedação do respirador). Se você perceber que um EPI está atrapalhando o outro, por favor, avise o TST para que ele indique a melhor combinação.",
+          "fonte": "NR-6 (OFICIAL)"
+        }
+      ]
+    },
+    {
+      "titulo": "2. Direitos e deveres",
+      "perguntas": [
+        {
+          "id": "EPI-Q010",
+          "titulo": "Quais são as obrigações da empresa em relação ao EPI?",
+          "variacoes": [
+            "o que a empresa tem que fazer sobre EPI",
+            "deveres do empregador"
+          ],
+          "resposta": "De acordo com a NR-6, a empresa deve:\n• fornecer a você, gratuitamente, o EPI adequado ao risco, em perfeito estado de conservação e funcionamento;\n• adquirir somente EPI com Certificado de Aprovação (CA);\n• orientar e treinar você sobre o uso adequado, a guarda e a conservação do EPI;\n• exigir o uso do EPI;\n• substituir imediatamente o EPI danificado ou extraviado;\n• cuidar da higienização e da manutenção periódica, quando aplicáveis, conforme o fabricante;\n• registrar a entrega do EPI, em livro, ficha ou sistema eletrônico.",
+          "fonte": "NR-6 (OFICIAL)"
+        },
+        {
+          "id": "EPI-Q011",
+          "titulo": "Quais são as obrigações do trabalhador em relação ao EPI?",
+          "variacoes": [
+            "o que eu tenho que fazer com o EPI",
+            "deveres do empregado"
+          ],
+          "resposta": "De acordo com a NR-6, cabe a você:\n• usar o EPI fornecido, apenas para a finalidade a que se destina;\n• cuidar da limpeza, da guarda e da conservação do EPI;\n• comunicar à empresa qualquer dano, extravio ou alteração que deixe o EPI impróprio para uso;\n• seguir as orientações da empresa sobre o uso adequado.",
+          "fonte": "NR-6 (OFICIAL)"
+        },
+        {
+          "id": "EPI-Q012",
+          "titulo": "Quem paga pelo EPI?",
+          "variacoes": [
+            "tenho que comprar meu EPI",
+            "o EPI é de graça",
+            "vão cobrar o EPI"
+          ],
+          "resposta": "Pode ficar tranquilo: quem paga é a empresa. O fornecimento de EPI é gratuito, conforme a CLT e a NR-6, e a reposição por desgaste natural também.",
+          "fonte": "CLT art. 166 (OFICIAL); NR-6 (OFICIAL)"
+        },
+        {
+          "id": "EPI-Q013",
+          "titulo": "A empresa pode descontar do salário o EPI perdido ou danificado?",
+          "variacoes": [
+            "vão descontar a luva que perdi",
+            "desconto em folha por EPI",
+            "pagar EPI quebrado"
+          ],
+          "resposta": "Em regra, não. A CLT proíbe descontos no salário, com algumas exceções, e o desgaste natural nunca gera desconto. Pela CLT, o desconto por dano causado pelo empregado só é permitido quando houve intenção de causar o dano (dolo) ou, nos casos de culpa, quando existe um acordo prévio prevendo o desconto. Se você tiver dúvida sobre uma situação específica, o RH poderá orientar com mais detalhes.",
+          "fonte": "CLT arts. 166 e 462 (OFICIAL); NR-6 (OFICIAL)"
+        },
+        {
+          "id": "EPI-Q014",
+          "titulo": "Sou obrigado a usar o EPI?",
+          "variacoes": [
+            "posso trabalhar sem EPI",
+            "é obrigatório usar",
+            "não gosto de usar o EPI"
+          ],
+          "resposta": "Sim, o uso é obrigatório: a NR-6 prevê isso como responsabilidade do trabalhador, e a empresa deve exigir o uso. Sabemos que às vezes o EPI pode incomodar. Se ele estiver machucando, com tamanho errado ou atrapalhando a atividade, por favor, avise o TST. Pode haver um modelo ou tamanho mais confortável para você.",
+          "fonte": "NR-6 (OFICIAL)"
+        },
+        {
+          "id": "EPI-Q015",
+          "titulo": "Posso me recusar a usar o EPI?",
+          "variacoes": [
+            "e se eu não quiser usar o EPI",
+            "recusar EPI",
+            "o EPI me incomoda, posso tirar?"
+          ],
+          "resposta": "A CLT considera falta a recusa sem justificativa de usar o EPI fornecido. Mas, se existe um motivo (o EPI machuca, causa alergia, está com tamanho errado, está danificado ou atrapalha a atividade), isso é uma justificativa importante. Por favor, comunique ao seu gestor e ao TST para que o problema seja resolvido. Enquanto isso, o recomendado é não fazer a atividade de risco sem proteção.",
+          "fonte": "CLT art. 158 (OFICIAL); NR-6 (OFICIAL)"
+        },
+        {
+          "id": "EPI-Q016",
+          "titulo": "Tenho direito a treinamento sobre o EPI?",
+          "variacoes": [
+            "quem me ensina a usar o EPI",
+            "treinamento de EPI"
+          ],
+          "resposta": "Sim! A empresa deve orientar e treinar você sobre o uso adequado, a guarda e a conservação do EPI. Sempre que você receber um EPI novo, também vai receber a orientação de uso e a indicação do treinamento vinculado.",
+          "fonte": "NR-6 (OFICIAL); Procedimento de reposição de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q017",
+          "titulo": "Pessoa com deficiência tem direito a EPI adaptado?",
+          "variacoes": [
+            "EPI adaptado",
+            "tenho deficiência e o EPI não serve"
+          ],
+          "resposta": "Sim. Quando solicitado e tecnicamente possível, o fabricante ou importador deve adaptar o EPI para a pessoa com deficiência, sem perder a eficácia da proteção. Para fazer o pedido, por favor, procure o TST.",
+          "fonte": "NR-6 (OFICIAL)"
+        },
+        {
+          "id": "EPI-Q018",
+          "titulo": "Usar EPI tira o meu adicional de insalubridade?",
+          "variacoes": [
+            "perco a insalubridade se usar EPI",
+            "EPI e adicional de insalubridade"
+          ],
+          "resposta": "Esse é um tema de direitos trabalhistas, e o RH é quem pode analisar o seu caso. De forma geral, o simples fornecimento do EPI não elimina automaticamente o adicional: a jurisprudência exige que a empresa adote medidas que de fato reduzam ou eliminem a nocividade, incluindo o uso efetivo do EPI. A análise de cada situação é feita pelo RH ou pelo jurídico, a partir do laudo técnico.",
+          "fonte": "Súmula 289 do TST (OFICIAL); NR-15 (OFICIAL)"
+        },
+        {
+          "id": "EPI-Q019",
+          "titulo": "Como é registrada a entrega do meu EPI?",
+          "variacoes": [
+            "ficha de EPI",
+            "onde fica registrado que recebi o EPI",
+            "preciso assinar algo?"
+          ],
+          "resposta": "A empresa registra cada entrega de EPI em livro, ficha ou sistema eletrônico, que pode ser biométrico. No SinergIA, o TST registra a entrega no sistema, e você pode consultar aqui no chat quais EPIs recebeu e quando. Os EPIs descartáveis, cujo registro individual não é viável, ficam disponíveis na embalagem original, no local de trabalho.",
+          "fonte": "NR-6 (OFICIAL); Procedimento de reposição de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q069",
+          "titulo": "O EPI incomoda ou dificulta o trabalho. O que faço?",
+          "variacoes": [
+            "a luva é desconfortável",
+            "o óculos embaça",
+            "a bota machuca o pé"
+          ],
+          "resposta": "Não deixe de usar e não faça adaptações por conta própria (cortar, furar ou retirar partes). Conte o problema aqui no chat ou ao TST: pode ser tamanho, modelo ou ajuste. Existem alternativas com CA válido, e o TST pode indicar outro modelo mais confortável para a sua atividade.",
+          "fonte": "NR-6 (OFICIAL); Política de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q070",
+          "titulo": "O que acontece se eu não usar o EPI?",
+          "variacoes": [
+            "vou ser punido se não usar EPI",
+            "posso ser advertido por não usar EPI",
+            "não usar EPI dá justa causa"
+          ],
+          "resposta": "Usar o EPI é uma obrigação do trabalhador porque protege a sua saúde. Pela CLT, a recusa sem justificativa em usar o EPI fornecido é considerada falta. Antes de qualquer medida, o objetivo da empresa é entender o motivo: se o EPI incomoda, não serve ou atrapalha, conte por aqui ou ao TST para encontrar uma alternativa.",
+          "fonte": "CLT art. 158 (OFICIAL); NR-6 (OFICIAL)"
+        }
+      ]
+    },
+    {
+      "titulo": "3. Reposição de EPI (avariado, perdido, não recebido ou tamanho inadequado)",
+      "perguntas": [
+        {
+          "id": "EPI-Q020",
+          "titulo": "Em quais situações posso pedir reposição de EPI?",
+          "variacoes": [
+            "quando posso pedir EPI novo",
+            "trocar EPI",
+            "pedir outro EPI"
+          ],
+          "resposta": "Você pode pedir a reposição sempre que o EPI estiver:\n• avariado: rasgado, furado, trincado, deformado ou sem vedação;\n• perdido ou extraviado;\n• não recebido: o seu cargo exige o EPI, mas ainda não há entrega registrada;\n• com tamanho inadequado: apertando, sobrando, escorregando ou sem vedar.",
+          "fonte": "Procedimento de reposição de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q021",
+          "titulo": "Como funciona a reposição de EPI, passo a passo?",
+          "variacoes": [
+            "como peço EPI novo",
+            "processo de reposição",
+            "o que acontece depois que eu peço",
+            "preciso de luva nova",
+            "quero EPI novo",
+            "como faço para pedir outra luva",
+            "quero luvas novas",
+            "preciso de um EPI novo"
+          ],
+          "resposta": "1 Relato: você informa aqui no chat qual é o EPI e a situação (avaria, perda, não recebido ou tamanho inadequado).\n2 Orientação imediata: você recebe a orientação de não fazer a atividade de risco sem o EPI adequado, não usar o equipamento danificado e avisar o seu gestor.\n3 Solicitação: a solicitação de reposição é aberta com status ABERTA.\n4 Reposição: o seu gestor e o TST são avisados; o TST entrega o novo EPI e registra a entrega, e a solicitação passa a ATENDIDA.\n5 Uso correto: você recebe a orientação de uso e conservação do novo EPI e a indicação do treinamento vinculado.",
+          "fonte": "Procedimento de reposição de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q022",
+          "titulo": "Qual o prazo para receber o EPI de reposição?",
+          "variacoes": [
+            "quanto tempo demora o EPI novo",
+            "em quanto tempo entregam"
+          ],
+          "resposta": "A reposição deve ser feita em até 24 horas após a abertura da solicitação. Se esse prazo passar, o TST recebe um alerta automático para priorizar o seu atendimento.",
+          "fonte": "Procedimento de reposição de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q023",
+          "titulo": "Como acompanho minha solicitação de EPI?",
+          "variacoes": [
+            "status do meu pedido de EPI",
+            "meu pedido foi atendido?"
+          ],
+          "resposta": "É só perguntar aqui no chat pelo status da sua solicitação. Ela fica ABERTA até o TST entregar o EPI e registrar a entrega; depois disso, passa a ATENDIDA.",
+          "fonte": "Procedimento de reposição de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q024",
+          "titulo": "Passou de 24 horas e não recebi o EPI. O que faço?",
+          "variacoes": [
+            "o TST não respondeu",
+            "meu pedido está atrasado",
+            "ninguém trouxe meu EPI"
+          ],
+          "resposta": "Sentimos pela demora. Quando a solicitação passa de 24 horas, o TST já recebe um alerta automático. Para agilizar, avise também o seu gestor. Até receber o EPI, por favor, não faça a atividade de risco: o gestor deve indicar outra atividade sem esse risco para você.",
+          "fonte": "Procedimento de reposição de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q025",
+          "titulo": "Meu EPI rasgou ou quebrou. O que eu faço?",
+          "variacoes": [
+            "minha luva furou",
+            "a bota descolou",
+            "o óculos trincou",
+            "o EPI estragou",
+            "minha luva rasgou",
+            "a luva furou",
+            "meu capacete trincou"
+          ],
+          "resposta": "Obrigado por avisar. Por favor, interrompa a atividade de risco, não use o EPI danificado e comunique o seu gestor. Você pode pedir a reposição aqui no chat, informando qual EPI foi danificado. O TST tem até 24 horas para entregar o novo. Na troca, entregue o EPI danificado ao TST para que ele seja descartado corretamente.",
+          "fonte": "NR-6 (OFICIAL); Procedimento de reposição de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q026",
+          "titulo": "Perdi meu EPI. O que eu faço?",
+          "variacoes": [
+            "sumiu meu EPI",
+            "esqueci o EPI em casa",
+            "extraviei o equipamento",
+            "perdi minhas luvas",
+            "perdi a bota",
+            "perdi o óculos de proteção",
+            "perdi a luva",
+            "perdi o protetor auricular"
+          ],
+          "resposta": "Acontece. A empresa deve substituir imediatamente o EPI extraviado. Por favor, avise o seu gestor e peça a reposição aqui no chat. Até receber o novo, o recomendado é não fazer a atividade de risco. Sobre desconto: em regra a empresa não pode descontar do salário; o desconto só é permitido quando houve intenção de causar o dano ou, em caso de culpa, quando existe acordo prévio prevendo o desconto.",
+          "fonte": "NR-6 (OFICIAL); CLT art. 462 (OFICIAL); Procedimento de reposição de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q027",
+          "titulo": "Ainda não recebi o EPI do meu cargo. Posso trabalhar sem ele?",
+          "variacoes": [
+            "não me deram EPI",
+            "comecei agora e não tenho EPI",
+            "falta EPI",
+            "estou sem luva",
+            "não tenho EPI",
+            "ainda não recebi minha bota"
+          ],
+          "resposta": "Por segurança, não. Por favor, não faça a atividade que exige o EPI até recebê-lo. Você pode pedir a entrega aqui no chat; avise também o seu gestor, que deve indicar outra atividade para você até a entrega.",
+          "fonte": "NR-6 (OFICIAL); Procedimento de reposição de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q028",
+          "titulo": "O EPI ficou apertado, grande ou não veda. Posso trocar?",
+          "variacoes": [
+            "tamanho errado",
+            "a bota aperta",
+            "a luva está grande",
+            "a máscara não veda"
+          ],
+          "resposta": "Claro! EPI de tamanho errado não protege como deveria. Você pode pedir a troca aqui no chat, informando o tamanho que usa. O TST verifica a numeração disponível e, se não houver o seu tamanho, registra a necessidade de compra e indica uma alternativa com CA válido.",
+          "fonte": "Procedimento de reposição de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q029",
+          "titulo": "O que fazer enquanto o EPI novo não chega?",
+          "variacoes": [
+            "posso improvisar",
+            "posso usar o EPI de outro modelo enquanto isso"
+          ],
+          "resposta": "Enquanto o novo EPI não chega, o recomendado é não fazer a atividade de risco. O seu gestor deve indicar outra atividade sem esse risco. Por favor, não improvise proteção com outros materiais: eles não garantem a sua segurança.",
+          "fonte": "NR-6 (OFICIAL); Procedimento de reposição de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q030",
+          "titulo": "O que fazer com o EPI danificado ou vencido?",
+          "variacoes": [
+            "onde jogo o EPI velho",
+            "descarte de EPI"
+          ],
+          "resposta": "Por favor, entregue o EPI ao TST no momento da troca. Ele cuida do descarte correto, principalmente quando o equipamento teve contato com produto químico ou agente biológico.",
+          "fonte": "Procedimento de reposição de EPI (INTERNO)"
+        }
+      ]
+    },
+    {
+      "titulo": "4. Troca, conservação e guarda",
+      "perguntas": [
+        {
+          "id": "EPI-Q031",
+          "titulo": "Quando vou ser avisado para trocar meu EPI?",
+          "variacoes": [
+            "aviso de troca",
+            "quando vence meu EPI",
+            "lembrete de EPI"
+          ],
+          "resposta": "Você recebe um aviso antes que o EPI deixe de proteger:\n• fim da vida útil: 15 dias e 3 dias antes da data prevista (data da última entrega somada à vida útil do EPI);\n• Certificado de Aprovação vencendo: 30 dias antes do vencimento;\n• novo EPI exigido pelo cargo: no dia da mudança de cargo, se ainda não houver entrega registrada. O TST recebe o mesmo aviso e providencia a nova entrega.",
+          "fonte": "Procedimento de troca de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q032",
+          "titulo": "Preciso esperar o aviso para trocar o EPI?",
+          "variacoes": [
+            "posso trocar antes do prazo",
+            "o EPI estragou antes do aviso"
+          ],
+          "resposta": "Não precisa esperar. O EPI deve ser trocado antes do prazo sempre que apresentar dano, desgaste, perda de vedação, odor que não sai com a limpeza, ou quando atingir o número máximo de higienizações indicado pelo fabricante. Nesses casos, é só pedir a reposição aqui no chat.",
+          "fonte": "NR-6 (OFICIAL); Procedimento de troca de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q033",
+          "titulo": "Mudei de cargo. Preciso de EPI novo?",
+          "variacoes": [
+            "fui promovido, muda o EPI",
+            "troquei de setor",
+            "novo cargo"
+          ],
+          "resposta": "Pode ser que sim. Cada cargo tem seus EPIs obrigatórios, definidos a partir dos riscos da atividade. Na mudança de cargo, o sistema verifica se falta entregar algum EPI exigido pelo novo cargo e avisa você e o TST no mesmo dia. Até receber o EPI, por favor, não faça a atividade de risco do novo cargo.",
+          "fonte": "Procedimento de troca de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q034",
+          "titulo": "Como sei qual é a vida útil do meu EPI?",
+          "variacoes": [
+            "quanto tempo dura meu EPI",
+            "de quanto em quanto tempo troca"
+          ],
+          "resposta": "A vida útil é definida pela ficha técnica do fabricante e pelas condições de uso, e fica registrada no cadastro do EPI. A data de troca é calculada a partir da sua última entrega, e você recebe um aviso com antecedência. Para ver a data do seu EPI, é só perguntar aqui no chat; se ficar alguma dúvida, o TST pode ajudar.",
+          "fonte": "NR-6 (OFICIAL); Procedimento de troca de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q035",
+          "titulo": "Quantas vezes posso lavar ou higienizar o EPI?",
+          "variacoes": [
+            "limite de lavagens",
+            "posso lavar o EPI quantas vezes quiser"
+          ],
+          "resposta": "Depende do modelo. O fabricante deve informar como limpar e, quando houver, o número máximo de higienizações. Depois desse limite, a proteção original não é mais garantida e o EPI deve ser trocado. A limpeza do dia a dia fica com você; a higienização e a manutenção periódica, quando aplicáveis, ficam com a empresa.",
+          "fonte": "NR-6 (OFICIAL)"
+        },
+        {
+          "id": "EPI-Q036",
+          "titulo": "Onde e como devo guardar o EPI?",
+          "variacoes": [
+            "posso deixar o EPI no armário",
+            "como guardar o EPI",
+            "levar o EPI para casa"
+          ],
+          "resposta": "O ideal é guardar o EPI limpo e seco, no local indicado pela empresa, longe do sol, de fontes de calor e de produtos químicos, e separado de roupas sujas e alimentos. Respiradores ficam em saco de papel limpo e identificado; protetores auriculares, no estojo; e óculos, em estojo ou saco plástico. Para levar o EPI para casa, por favor, consulte antes o TST.",
+          "fonte": "NR-6 (OFICIAL); Instruções de uso de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q037",
+          "titulo": "Como recebo EPI descartável?",
+          "variacoes": [
+            "luva descartável",
+            "máscara descartável",
+            "onde pego EPI descartável"
+          ],
+          "resposta": "Os EPIs descartáveis, cujo registro individual não é viável, ficam disponíveis no local de trabalho, na embalagem original e em quantidade suficiente, com reposição imediata. Se estiverem faltando, por favor, avise o seu gestor ou peça aqui no chat.",
+          "fonte": "NR-6 (OFICIAL)"
+        },
+        {
+          "id": "EPI-Q068",
+          "titulo": "Posso levar o EPI para casa?",
+          "variacoes": [
+            "levar a luva para lavar em casa",
+            "guardar EPI em casa",
+            "posso ir embora com o EPI"
+          ],
+          "resposta": "Depende do EPI. Itens pessoais e de uso diário, como calçado de segurança, podem acompanhar você, se essa for a orientação do setor. EPIs que exigem higienização específica, como luvas de malha de aço e respiradores, devem seguir o procedimento da empresa e ficar no local de guarda indicado. Em caso de dúvida, pergunte ao TST.",
+          "fonte": "Instruções de uso de EPI (INTERNO)"
+        }
+      ]
+    },
+    {
+      "titulo": "5. Uso, conservação e troca por tipo de EPI",
+      "perguntas": [
+        {
+          "id": "EPI-Q038",
+          "titulo": "Luva nitrílica: para que serve e como usar?",
+          "variacoes": [
+            "luva de borracha",
+            "luva para produto de limpeza",
+            "como calçar a luva"
+          ],
+          "resposta": "A luva nitrílica protege as mãos contra produtos de limpeza, umidade e agentes químicos leves. Antes de calçar, vale conferir se há furos ou rasgos: encha a luva de ar e aperte o punho. Use com as mãos limpas e secas e sem anéis por baixo. Para retirar, puxe pelo punho, virando a luva do avesso, sem tocar a parte externa.",
+          "fonte": "Instruções de uso de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q039",
+          "titulo": "Luva nitrílica: como conservar e quando trocar?",
+          "variacoes": [
+            "lavar luva de borracha",
+            "luva ressecada",
+            "luva furada"
+          ],
+          "resposta": "Lave a luva nitrílica com água e sabão neutro ainda calçada, enxágue e deixe secar à sombra, pendurada pelos dedos. Guarde em local seco, longe do sol e de produtos químicos. Ela deve ser trocada se houver furo, rasgo, ressecamento, perda de elasticidade ou mudança de cor. Se estiver contaminada por produto químico, por favor, entregue ao TST para o descarte.",
+          "fonte": "Instruções de uso de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q040",
+          "titulo": "Luva térmica para câmara fria: para que serve e como usar?",
+          "variacoes": [
+            "luva para o frio",
+            "luva da câmara fria",
+            "mão gelando na câmara"
+          ],
+          "resposta": "A luva térmica protege as mãos do frio intenso ao entrar em câmaras frias e ao manusear produtos congelados, por isso deve ser usada sempre nessas situações. Mantenha a luva seca: quando úmida, ela perde o isolamento. Se houver risco de corte e o seu cargo exigir, use a luva anticorte por baixo.",
+          "fonte": "Instruções de uso de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q041",
+          "titulo": "Luva térmica: como conservar e quando trocar?",
+          "variacoes": [
+            "luva térmica molhada",
+            "luva térmica não esquenta"
+          ],
+          "resposta": "Seque a luva térmica ao ar livre, longe de fontes de calor diretas, e lave conforme a ficha do fabricante. Ela deve ser trocada se o forro estiver aparente, se houver furos ou se não aquecer mais.",
+          "fonte": "Instruções de uso de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q042",
+          "titulo": "Luva anticorte: para que serve e como usar?",
+          "variacoes": [
+            "luva de malha",
+            "luva para faca",
+            "em qual mão uso a luva anticorte"
+          ],
+          "resposta": "A luva anticorte protege contra cortes no manuseio de facas, lâminas e embalagens. Em geral, ela é usada na mão que segura o produto, e não na mão que segura a faca, salvo orientação diferente do TST. Atenção: não use a luva anticorte perto de máquinas com partes rotativas, porque ela pode ser puxada.",
+          "fonte": "Instruções de uso de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q043",
+          "titulo": "Luva anticorte: como conservar e quando trocar?",
+          "variacoes": [
+            "luva anticorte desfiando",
+            "lavar luva anticorte"
+          ],
+          "resposta": "Lave a luva anticorte conforme a ficha do fabricante e deixe secar completamente antes de usar. Ela deve ser trocada se houver fios rompidos, furos ou desgaste nas pontas dos dedos.",
+          "fonte": "Instruções de uso de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q044",
+          "titulo": "Calçado de segurança: para que serve e como usar?",
+          "variacoes": [
+            "bota",
+            "botina",
+            "sapato de segurança",
+            "bota com biqueira"
+          ],
+          "resposta": "O calçado de segurança (bota ou botina) protege os pés contra impacto e queda de objetos, piso escorregadio e umidade. Use o número certo: o calçado não deve apertar nem deixar o pé solto. Mantenha-o amarrado ou fechado durante toda a jornada e use meias limpas e secas.",
+          "fonte": "Instruções de uso de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q045",
+          "titulo": "Calçado de segurança: como conservar e quando trocar?",
+          "variacoes": [
+            "bota descolando",
+            "solado liso",
+            "biqueira aparecendo",
+            "secar a bota"
+          ],
+          "resposta": "Limpe o calçado de segurança com pano úmido e deixe secar à sombra. Evite secar perto de fogo ou aquecedor, porque o solado deforma. Ele deve ser trocado se o solado estiver liso ou descolando, se a biqueira estiver exposta, ou se estiver rasgado ou deformado.",
+          "fonte": "Instruções de uso de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q046",
+          "titulo": "Óculos de proteção: para que servem e como usar?",
+          "variacoes": [
+            "óculos de segurança",
+            "uso óculos de grau",
+            "óculos embaçando"
+          ],
+          "resposta": "Os óculos de proteção protegem os olhos contra partículas, respingos de produtos químicos e poeira. Ajuste as hastes para que fiquem firmes, sem apertar. Se você usa óculos de grau, peça ao TST o modelo de sobrepor.",
+          "fonte": "Instruções de uso de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q047",
+          "titulo": "Óculos de proteção: como conservar e quando trocar?",
+          "variacoes": [
+            "lente riscada",
+            "óculos trincado",
+            "limpar óculos de proteção"
+          ],
+          "resposta": "Lave as lentes com água e sabão neutro e seque com pano macio ou papel que não solte fiapos. Guarde em estojo ou saco plástico para não riscar. Os óculos devem ser trocados se as lentes estiverem riscadas a ponto de atrapalhar a visão, trincadas, ou se as hastes estiverem quebradas.",
+          "fonte": "Instruções de uso de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q048",
+          "titulo": "Protetor auricular tipo plugue: para que serve e como usar?",
+          "variacoes": [
+            "tampão de ouvido",
+            "protetor de ouvido",
+            "como colocar o protetor auricular"
+          ],
+          "resposta": "O protetor auricular tipo plugue protege a sua audição contra ruído acima do limite de tolerância. Com as mãos limpas, enrole o plugue entre os dedos até ficar fino. Com a outra mão, puxe a orelha para cima e para trás e insira o plugue. Segure por alguns segundos até ele expandir e vedar o canal do ouvido. Use durante todo o tempo de exposição ao ruído: tirar o protetor, mesmo por pouco tempo, reduz muito a proteção.",
+          "fonte": "Instruções de uso de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q049",
+          "titulo": "Protetor auricular: como conservar e quando trocar?",
+          "variacoes": [
+            "lavar tampão de ouvido",
+            "protetor auricular duro"
+          ],
+          "resposta": "Se o seu protetor for reutilizável, lave com água e sabão neutro e guarde no estojo. Por higiene, não compartilhe com outras pessoas. Ele deve ser trocado se estiver endurecido, deformado, sujo de forma permanente, ou se não vedar mais.",
+          "fonte": "Instruções de uso de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q050",
+          "titulo": "Respirador PFF2: para que serve e como usar?",
+          "variacoes": [
+            "máscara PFF2",
+            "máscara de poeira",
+            "como colocar a máscara",
+            "teste de vedação"
+          ],
+          "resposta": "O respirador PFF2 protege as vias respiratórias contra poeiras, névoas e agentes biológicos transmitidos pelo ar. Segure o respirador com a parte nasal para cima e passe os elásticos pela cabeça. Molde o clipe nasal com as duas mãos. Depois, faça o teste de vedação: cubra o respirador com as mãos e expire; não deve escapar ar pelas bordas. A barba impede a vedação, por isso o rosto deve estar barbeado na área de contato.",
+          "fonte": "Instruções de uso de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q051",
+          "titulo": "Respirador PFF2: como conservar e quando trocar?",
+          "variacoes": [
+            "posso lavar a máscara PFF2",
+            "passar álcool na máscara",
+            "máscara úmida"
+          ],
+          "resposta": "Não lave o respirador PFF2 nem use álcool nele, porque isso danifica o filtro. Entre os usos, guarde em saco de papel limpo e identificado. Ele deve ser trocado se estiver úmido, sujo, deformado, com elástico frouxo, ou se ficar difícil respirar. Siga também o prazo de uso da ficha do fabricante.",
+          "fonte": "Instruções de uso de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q052",
+          "titulo": "Avental impermeável: para que serve e como usar?",
+          "variacoes": [
+            "avental de PVC",
+            "avental de borracha",
+            "avental para lavagem"
+          ],
+          "resposta": "O avental impermeável protege o corpo contra umidade e respingos durante a lavagem e a higienização. Ajuste as tiras para que ele cubra do peito aos joelhos.",
+          "fonte": "Instruções de uso de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q053",
+          "titulo": "Avental impermeável: como conservar e quando trocar?",
+          "variacoes": [
+            "avental rasgado",
+            "lavar avental"
+          ],
+          "resposta": "Lave o avental com água e sabão neutro ao fim do turno e pendure para secar. Ele deve ser trocado se estiver rasgado, com furos ou com costuras abertas.",
+          "fonte": "Instruções de uso de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q065",
+          "titulo": "Japona ou jaqueta térmica: para que serve e como usar?",
+          "variacoes": [
+            "roupa para câmara fria",
+            "jaqueta térmica",
+            "japona do frio"
+          ],
+          "resposta": "A vestimenta térmica protege o corpo do frio intenso na câmara fria e no manuseio de congelados. Vista antes de entrar no ambiente frio, mantenha fechada e use junto com a luva térmica e a touca, quando indicadas para o seu cargo. Mantenha a vestimenta seca e limpa: umidade reduz o isolamento.",
+          "fonte": "Instruções de uso de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q066",
+          "titulo": "Japona ou jaqueta térmica: como conservar e quando trocar?",
+          "variacoes": [
+            "lavar a japona",
+            "jaqueta térmica rasgada",
+            "trocar vestimenta térmica"
+          ],
+          "resposta": "Pendure em local seco e arejado ao fim do turno, sem dobrar molhada. Siga a orientação de higienização do fabricante e do TST. Peça a troca quando houver rasgos, zíper ou fecho com defeito, enchimento amassado ou perda de isolamento (sensação de frio mesmo com a vestimenta fechada).",
+          "fonte": "Instruções de uso de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q067",
+          "titulo": "Luva de malha de aço: para que serve e como usar?",
+          "variacoes": [
+            "luva de aço do açougue",
+            "luva para faca",
+            "luva de malha"
+          ],
+          "resposta": "A luva de malha de aço protege a mão que segura o produto contra cortes por faca em atividades como desossa e manipulação de carnes, quando indicada para o cargo. Ajuste o tamanho para que fique firme no punho, verifique se não há elos abertos antes do uso e higienize conforme o procedimento do setor ao final do turno.",
+          "fonte": "Instruções de uso de EPI (INTERNO)"
+        }
+      ]
+    },
+    {
+      "titulo": "6. Situações do dia a dia",
+      "perguntas": [
+        {
+          "id": "EPI-Q054",
+          "titulo": "Posso emprestar meu EPI a um colega?",
+          "variacoes": [
+            "usar o EPI do colega",
+            "dividir EPI",
+            "pegar EPI emprestado"
+          ],
+          "resposta": "Entendemos a vontade de ajudar, mas o EPI é de uso individual, principalmente o protetor auricular e o respirador, por questão de higiene e de ajuste ao corpo. O melhor jeito de ajudar o seu colega é orientá-lo a pedir a reposição aqui no chat e avisar o gestor.",
+          "fonte": "NR-6 (OFICIAL); Instruções de uso de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q055",
+          "titulo": "O EPI me causou alergia, irritação ou machucado. O que faço?",
+          "variacoes": [
+            "a luva me deu alergia",
+            "a bota fez bolha",
+            "coceira com o EPI"
+          ],
+          "resposta": "Sentimos muito pelo incômodo. Por favor, pare de usar o equipamento, avise o seu gestor e o TST e procure o serviço de saúde da empresa, que é quem pode orientar sobre o cuidado com a sua saúde. O TST vai avaliar um modelo alternativo com CA válido para você.",
+          "fonte": "NR-6 (OFICIAL); Orientação de segurança (INTERNO)"
+        },
+        {
+          "id": "EPI-Q056",
+          "titulo": "Vi um colega trabalhando sem EPI. O que faço?",
+          "variacoes": [
+            "colega sem EPI",
+            "denunciar falta de EPI",
+            "alguém sem proteção"
+          ],
+          "resposta": "Obrigado por se preocupar com o colega. Se possível, oriente-o com gentileza a interromper a atividade de risco e avise o gestor ou o TST. O objetivo é proteger, não punir: o colega pode estar sem o EPI por avaria, perda ou falta de entrega, e a reposição pode ser pedida aqui no chat.",
+          "fonte": "Orientação de segurança (INTERNO)"
+        },
+        {
+          "id": "EPI-Q057",
+          "titulo": "Visitante ou terceirizado precisa usar EPI?",
+          "variacoes": [
+            "prestador de serviço precisa de EPI",
+            "visita na área operacional",
+            "terceirizado sem EPI"
+          ],
+          "resposta": "Sim. Pela regra interna, ninguém entra em área de risco sem o EPI exigido para aquela área, seja colaborador, visitante ou terceirizado. O terceirizado recebe o EPI da empresa contratada, e o visitante recebe o EPI na entrada da área, conforme orientação do TST. Em caso de dúvida, por favor, procure o TST antes de entrar.",
+          "fonte": "Orientação de segurança (INTERNO)"
+        },
+        {
+          "id": "EPI-Q058",
+          "titulo": "Sofri um acidente ou estou passando mal durante o trabalho. O que faço?",
+          "variacoes": [
+            "me machuquei",
+            "cortei a mão",
+            "estou tonto",
+            "acidente de trabalho"
+          ],
+          "resposta": "Por favor, interrompa a atividade agora e procure o seu gestor, o TST ou o serviço de saúde da empresa. Se for uma emergência, acione o socorro imediatamente. Esses profissionais são as pessoas certas para cuidar de você neste momento.",
+          "fonte": "Orientação de segurança (INTERNO)"
+        }
+      ]
+    },
+    {
+      "titulo": "7. Pedidos e dúvidas frequentes no chat",
+      "perguntas": [
+        {
+          "id": "EPI-Q059",
+          "titulo": "Preciso de um EPI novo. Como peço?",
+          "variacoes": [
+            "quero novas luvas",
+            "preciso de luvas",
+            "me dá uma bota nova",
+            "quero trocar meu EPI"
+          ],
+          "resposta": "Pode pedir por aqui mesmo. Para abrir a solicitação, conte qual é o EPI e o que aconteceu: se ele danificou, se foi perdido, se ainda não foi entregue ou se o tamanho não serve. Com essa informação, a solicitação é aberta, o seu gestor e o TST são avisados e você recebe a orientação do que fazer até a entrega.",
+          "fonte": "Procedimento de reposição de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q060",
+          "titulo": "Esqueci o EPI em casa. Posso trabalhar sem ele hoje?",
+          "variacoes": [
+            "deixei a bota em casa",
+            "esqueci o óculos de proteção",
+            "vim sem EPI"
+          ],
+          "resposta": "Não faça a atividade de risco sem o EPI. Avise o seu gestor logo no início do turno: ele pode providenciar um EPI reserva com o TST ou indicar outra atividade até você estar protegido. Se o esquecimento virar perda, peça a reposição aqui no chat.",
+          "fonte": "NR-6 (OFICIAL); Procedimento de reposição de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q061",
+          "titulo": "Posso usar um EPI que eu mesmo comprei?",
+          "variacoes": [
+            "comprei minha própria luva",
+            "posso trazer EPI de casa",
+            "uso o meu óculos de proteção"
+          ],
+          "resposta": "Somente se o TST aprovar. O EPI precisa ter Certificado de Aprovação (CA) válido, ser adequado ao risco da sua atividade e ter a entrega registrada. Como o fornecimento é obrigação da empresa e é gratuito, o recomendado é usar o EPI fornecido; se ele não estiver confortável ou adequado, peça a troca por aqui.",
+          "fonte": "NR-6 (OFICIAL); Política de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q062",
+          "titulo": "Posso usar anel, relógio ou pulseira com o EPI?",
+          "variacoes": [
+            "adorno com luva",
+            "aliança na câmara fria",
+            "posso trabalhar de relógio"
+          ],
+          "resposta": "Evite. Adornos podem rasgar a luva por dentro, prender em máquinas e equipamentos, acumular sujeira e, no frio, conduzir a baixa temperatura para a pele. Retire anéis, pulseiras e relógios antes de calçar as luvas e de operar equipamentos.",
+          "fonte": "Instruções de uso de EPI (INTERNO)"
+        },
+        {
+          "id": "EPI-Q063",
+          "titulo": "A barba atrapalha o respirador PFF2?",
+          "variacoes": [
+            "barba e máscara",
+            "a PFF2 não veda com barba",
+            "preciso tirar a barba para usar respirador"
+          ],
+          "resposta": "Sim. Pelos na área de contato impedem a vedação do respirador, e o ar contaminado passa pelas frestas. Para atividades que exigem PFF2, a região de contato da máscara com o rosto deve estar sem barba. Faça sempre o teste de vedação ao colocar: cubra o respirador com as mãos, expire e veja se o ar escapa pelas bordas.",
+          "fonte": "Instruções de uso de EPI (INTERNO); Programa de Proteção Respiratória (INTERNO)"
+        },
+        {
+          "id": "EPI-Q064",
+          "titulo": "Como sei se o EPI é o certo para a minha tarefa?",
+          "variacoes": [
+            "qual EPI devo usar nessa atividade",
+            "essa luva serve para esse serviço",
+            "EPI certo para cada tarefa"
+          ],
+          "resposta": "Os EPIs de cada cargo são definidos pelo TST a partir dos riscos avaliados no PGR. Se a tarefa mudou, se você vai fazer uma atividade diferente da habitual ou se ficou em dúvida sobre qual EPI usar, pergunte ao seu gestor ou ao TST antes de começar. Na dúvida, não faça a atividade de risco sem orientação.",
+          "fonte": "NR-6 (OFICIAL); NR-1 (OFICIAL); PGR (INTERNO)"
+        }
+      ]
+    }
+  ]
+}
