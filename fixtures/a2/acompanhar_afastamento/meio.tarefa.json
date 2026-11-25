@@ -1,0 +1,49 @@
+{
+  "protocolo": "sinergia/1",
+  "id_mensagem": "t-105-06",
+  "tipo": "TAREFA",
+  "acao": "a2.acompanhar_afastamento",
+  "origem": "A0",
+  "destino": "A2",
+  "correlacao": {
+    "id_caso": 105,
+    "thread_id": "chat-42-105",
+    "id_tarefa": "t-105-06"
+  },
+  "contexto": {
+    "id_colaborador": 42,
+    "id_empresa": 1,
+    "perfil": "colaborador",
+    "canal": "chat",
+    "data_hora": "2026-11-23T09:00:00-03:00"
+  },
+  "payload": {
+    "id_caso": 105,
+    "marco": "meio",
+    "dias": 5,
+    "prazos_legais": []
+  },
+  "registro_inicial": {
+    "id_caso": 105,
+    "thread_id": "chat-42-105",
+    "aberto_em": "2026-11-21T09:05:00-03:00",
+    "canal": "chat",
+    "id_colaborador": 42,
+    "nome": "Carla S.",
+    "matricula": "00123",
+    "id_empresa": 1,
+    "id_area": 2,
+    "id_setor": 7,
+    "id_cargo": 15,
+    "id_gestor": 9,
+    "jornada_inicio": "07:00",
+    "jornada_fim": "16:00",
+    "situacao_funcional": "ativo",
+    "municipio": "Campinas",
+    "uf": "SP",
+    "tipo_solicitacao": "atestado_medico",
+    "inicio_informado": "2026-11-21",
+    "dias_informados": 5,
+    "tem_documento": true
+  }
+}

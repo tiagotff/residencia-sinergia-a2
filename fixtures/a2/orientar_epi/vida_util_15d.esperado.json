@@ -1,0 +1,58 @@
+{
+  "protocolo": "sinergia/1",
+  "id_mensagem": "r-901-01",
+  "tipo": "RESULTADO",
+  "acao": "a2.orientar_epi",
+  "origem": "A2",
+  "destino": "A0",
+  "em_resposta_a": "t-901-01",
+  "correlacao": {
+    "id_caso": null,
+    "thread_id": "chat-57-901",
+    "id_tarefa": "t-901-01"
+  },
+  "status": "OK",
+  "estado_proposto": null,
+  "payload": {
+    "base": "epi",
+    "id_alerta": 901,
+    "situacao": "vida_util",
+    "dias": 15,
+    "ids_trechos": [
+      "EPI-Q031",
+      "EPI-Q032"
+    ]
+  },
+  "saidas": [
+    {
+      "tipo": "mensagem",
+      "para": {
+        "perfil": "colaborador",
+        "id_colaborador": 57
+      },
+      "nivel_detalhe": "individual",
+      "texto": "O seu protetor auricular chega ao fim da vida útil em 15 dias. O TST já foi avisado e vai providenciar a troca. Se ele estragar antes disso, é só pedir a reposição aqui no chat.",
+      "fontes": [
+        {
+          "base": "epi",
+          "titulo": "Base de Conhecimento EPI",
+          "versao": "1.2",
+          "refs": [
+            "EPI-Q031",
+            "EPI-Q032"
+          ]
+        }
+      ],
+      "agendar_para": null,
+      "sensivel": false
+    }
+  ],
+  "eventos": [],
+  "decisao": {
+    "motivo": "modelo fixo F6 (vida_util)",
+    "usou_llm": false,
+    "confianca": 1.0,
+    "modelo": null
+  },
+  "erro": null
+}

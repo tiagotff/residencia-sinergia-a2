@@ -1,0 +1,58 @@
+{
+  "protocolo": "sinergia/1",
+  "id_mensagem": "r-207-01",
+  "tipo": "RESULTADO",
+  "acao": "a2.responder",
+  "origem": "A2",
+  "destino": "A0",
+  "em_resposta_a": "t-207-01",
+  "correlacao": {
+    "id_caso": null,
+    "thread_id": "chat-42-207",
+    "id_tarefa": "t-207-01"
+  },
+  "status": "OK",
+  "estado_proposto": null,
+  "payload": {
+    "base": "direitos_beneficios",
+    "trechos_usados": 1,
+    "ids_trechos": [
+      "RH-BEN-Q008"
+    ],
+    "bases_consultadas": [
+      "direitos_beneficios"
+    ],
+    "cobertura": "parcial"
+  },
+  "saidas": [
+    {
+      "tipo": "mensagem",
+      "para": {
+        "perfil": "colaborador",
+        "id_colaborador": 42
+      },
+      "nivel_detalhe": "individual",
+      "texto": "Sim. O colaborador tem o direito de converter até 1/3 do período de férias (10 dias) em dinheiro. A solicitação deve ser feita ao RH até 15 dias antes do término do período aquisitivo.",
+      "fontes": [
+        {
+          "base": "direitos_beneficios",
+          "titulo": "Base de Conhecimento RH: Benefícios e Direitos Trabalhistas",
+          "versao": "1.0",
+          "refs": [
+            "RH-BEN-Q008"
+          ]
+        }
+      ],
+      "agendar_para": null,
+      "sensivel": false
+    }
+  ],
+  "eventos": [],
+  "decisao": {
+    "motivo": "resposta RAG com 1 trecho(s) vigente(s); bases: Benefícios e Direitos Trabalhistas; modo extrativo (llm_nao_configurado)",
+    "usou_llm": false,
+    "confianca": 0.45,
+    "modelo": null
+  },
+  "erro": null
+}

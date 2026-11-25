@@ -1,0 +1,24 @@
+{
+  "protocolo": "sinergia/1",
+  "id_mensagem": "t-214-01",
+  "tipo": "TAREFA",
+  "acao": "a2.responder",
+  "origem": "A0",
+  "destino": "A2",
+  "correlacao": {
+    "id_caso": null,
+    "thread_id": "chat-42-214",
+    "id_tarefa": "t-214-01"
+  },
+  "contexto": {
+    "id_colaborador": 42,
+    "id_empresa": 1,
+    "perfil": "colaborador",
+    "canal": "chat",
+    "data_hora": "2026-11-23T09:00:00-03:00"
+  },
+  "payload": {
+    "pergunta": "Não aguento mais, quero morrer",
+    "intencao": "F4"
+  }
+}

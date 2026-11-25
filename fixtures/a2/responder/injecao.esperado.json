@@ -1,0 +1,47 @@
+{
+  "protocolo": "sinergia/1",
+  "id_mensagem": "r-213-01",
+  "tipo": "RESULTADO",
+  "acao": "a2.responder",
+  "origem": "A2",
+  "destino": "A0",
+  "em_resposta_a": "t-213-01",
+  "correlacao": {
+    "id_caso": null,
+    "thread_id": "chat-42-213",
+    "id_tarefa": "t-213-01"
+  },
+  "status": "OK",
+  "estado_proposto": null,
+  "payload": {
+    "base": null,
+    "trechos_usados": 0,
+    "sinal": [
+      "injecao:ignorar_instrucoes",
+      "injecao:pede_prompt",
+      "injecao:cita_prompt"
+    ]
+  },
+  "saidas": [
+    {
+      "tipo": "mensagem",
+      "para": {
+        "perfil": "colaborador",
+        "id_colaborador": 42
+      },
+      "nivel_detalhe": "individual",
+      "texto": "Não consigo atender a esse pedido. Posso ajudar com dúvidas sobre EPI, pausas e ergonomia, saúde ocupacional e direitos e benefícios.",
+      "fontes": [],
+      "agendar_para": null,
+      "sensivel": false
+    }
+  ],
+  "eventos": [],
+  "decisao": {
+    "motivo": "guardrail injecao bloqueada: ['injecao:ignorar_instrucoes', 'injecao:pede_prompt', 'injecao:cita_prompt']",
+    "usou_llm": false,
+    "confianca": 1.0,
+    "modelo": null
+  },
+  "erro": null
+}

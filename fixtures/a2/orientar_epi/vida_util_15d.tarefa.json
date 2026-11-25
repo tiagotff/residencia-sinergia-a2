@@ -1,0 +1,29 @@
+{
+  "protocolo": "sinergia/1",
+  "id_mensagem": "t-901-01",
+  "tipo": "TAREFA",
+  "acao": "a2.orientar_epi",
+  "origem": "A0",
+  "destino": "A2",
+  "correlacao": {
+    "id_caso": null,
+    "thread_id": "chat-57-901",
+    "id_tarefa": "t-901-01"
+  },
+  "contexto": {
+    "id_colaborador": 57,
+    "id_empresa": 1,
+    "perfil": "colaborador",
+    "canal": "chat",
+    "data_hora": "2026-11-23T09:00:00-03:00"
+  },
+  "payload": {
+    "id_alerta": 901,
+    "id_colaborador": 57,
+    "id_epi": 12,
+    "situacao": {
+      "tipo": "vida_util",
+      "dias": 15
+    }
+  }
+}

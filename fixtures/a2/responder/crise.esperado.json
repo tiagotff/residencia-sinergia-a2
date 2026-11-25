@@ -1,0 +1,59 @@
+{
+  "protocolo": "sinergia/1",
+  "id_mensagem": "r-214-01",
+  "tipo": "RESULTADO",
+  "acao": "a2.responder",
+  "origem": "A2",
+  "destino": "A0",
+  "em_resposta_a": "t-214-01",
+  "correlacao": {
+    "id_caso": null,
+    "thread_id": "chat-42-214",
+    "id_tarefa": "t-214-01"
+  },
+  "status": "PRECISA_HUMANO",
+  "estado_proposto": null,
+  "payload": {
+    "base": "saude_ocupacional",
+    "trechos_usados": 1,
+    "ids_trechos": [
+      "SO-Q048"
+    ],
+    "encaminhar_para": "RH",
+    "sinal": [
+      "crise:ideacao",
+      "crise:desespero"
+    ]
+  },
+  "saidas": [
+    {
+      "tipo": "mensagem",
+      "para": {
+        "perfil": "colaborador",
+        "id_colaborador": 42
+      },
+      "nivel_detalhe": "individual",
+      "texto": "Você não está sozinho. Se estiver em perigo ou pensando em se machucar, ligue agora para o SAMU (192) ou vá ao pronto-socorro mais próximo. Para conversar com alguém a qualquer hora, o CVV atende de graça pelo telefone 188, 24 horas. Na empresa, procure o serviço de saúde ou uma pessoa de confiança.",
+      "fontes": [
+        {
+          "base": "saude_ocupacional",
+          "titulo": "Base de Conhecimento Saúde Ocupacional",
+          "versao": "1.0",
+          "refs": [
+            "SO-Q048"
+          ]
+        }
+      ],
+      "agendar_para": null,
+      "sensivel": true
+    }
+  ],
+  "eventos": [],
+  "decisao": {
+    "motivo": "guardrail crise: resposta aprovada SO-Q048 e escalonamento",
+    "usou_llm": false,
+    "confianca": 1.0,
+    "modelo": null
+  },
+  "erro": null
+}

@@ -1,0 +1,58 @@
+{
+  "protocolo": "sinergia/1",
+  "id_mensagem": "r-208-01",
+  "tipo": "RESULTADO",
+  "acao": "a2.responder",
+  "origem": "A2",
+  "destino": "A0",
+  "em_resposta_a": "t-208-01",
+  "correlacao": {
+    "id_caso": null,
+    "thread_id": "chat-42-208",
+    "id_tarefa": "t-208-01"
+  },
+  "status": "OK",
+  "estado_proposto": null,
+  "payload": {
+    "base": "pausas_ergonomia",
+    "trechos_usados": 1,
+    "ids_trechos": [
+      "RH-ERG-Q002"
+    ],
+    "bases_consultadas": [
+      "pausas_ergonomia"
+    ],
+    "cobertura": "parcial"
+  },
+  "saidas": [
+    {
+      "tipo": "mensagem",
+      "para": {
+        "perfil": "colaborador",
+        "id_colaborador": 42
+      },
+      "nivel_detalhe": "individual",
+      "texto": "Trabalho em Computador (Geral): Recomenda-se pausa de 5 a 10 minutos a cada 50 minutos de trabalho contínuo. Teleatendimento / Call Center: Pausas obrigatórias por lei (NR-17), com duas pausas de 10 minutos fora do horário de refeição. Importante: As pausas integram a jornada normal e não devem ser compensadas ao final do expediente.",
+      "fontes": [
+        {
+          "base": "pausas_ergonomia",
+          "titulo": "Base de Conhecimento RH: Pausas e Ergonomia",
+          "versao": "2.0",
+          "refs": [
+            "RH-ERG-Q002"
+          ]
+        }
+      ],
+      "agendar_para": null,
+      "sensivel": false
+    }
+  ],
+  "eventos": [],
+  "decisao": {
+    "motivo": "resposta RAG com 1 trecho(s) vigente(s); bases: Pausas e Ergonomia; modo extrativo (llm_nao_configurado)",
+    "usou_llm": false,
+    "confianca": 0.5,
+    "modelo": null
+  },
+  "erro": null
+}

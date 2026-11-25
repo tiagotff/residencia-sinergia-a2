@@ -1,0 +1,58 @@
+{
+  "protocolo": "sinergia/1",
+  "id_mensagem": "r-211-01",
+  "tipo": "RESULTADO",
+  "acao": "a2.responder",
+  "origem": "A2",
+  "destino": "A0",
+  "em_resposta_a": "t-211-01",
+  "correlacao": {
+    "id_caso": null,
+    "thread_id": "chat-42-211",
+    "id_tarefa": "t-211-01"
+  },
+  "status": "OK",
+  "estado_proposto": null,
+  "payload": {
+    "base": "epi",
+    "trechos_usados": 1,
+    "ids_trechos": [
+      "EPI-Q050"
+    ],
+    "bases_consultadas": [
+      "epi"
+    ],
+    "cobertura": "parcial"
+  },
+  "saidas": [
+    {
+      "tipo": "mensagem",
+      "para": {
+        "perfil": "colaborador",
+        "id_colaborador": 42
+      },
+      "nivel_detalhe": "individual",
+      "texto": "O respirador PFF2 protege as vias respiratórias contra poeiras, névoas e agentes biológicos transmitidos pelo ar. Segure o respirador com a parte nasal para cima e passe os elásticos pela cabeça. Molde o clipe nasal com as duas mãos. Depois, faça o teste de vedação: cubra o respirador com as mãos e expire; não deve escapar ar pelas bordas. A barba impede a vedação, por isso o rosto deve estar barbeado na área de contato.",
+      "fontes": [
+        {
+          "base": "epi",
+          "titulo": "Base de Conhecimento EPI",
+          "versao": "1.2",
+          "refs": [
+            "EPI-Q050"
+          ]
+        }
+      ],
+      "agendar_para": null,
+      "sensivel": false
+    }
+  ],
+  "eventos": [],
+  "decisao": {
+    "motivo": "resposta RAG com 1 trecho(s) vigente(s); bases: EPI; intenção indicava direitos_beneficios, evidência apontou epi; modo extrativo (llm_nao_configurado)",
+    "usou_llm": false,
+    "confianca": 0.37,
+    "modelo": null
+  },
+  "erro": null
+}

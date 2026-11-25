@@ -1,0 +1,71 @@
+{
+  "protocolo": "sinergia/1",
+  "id_mensagem": "r-210-01",
+  "tipo": "RESULTADO",
+  "acao": "a2.responder",
+  "origem": "A2",
+  "destino": "A0",
+  "em_resposta_a": "t-210-01",
+  "correlacao": {
+    "id_caso": null,
+    "thread_id": "chat-42-210",
+    "id_tarefa": "t-210-01"
+  },
+  "status": "OK",
+  "estado_proposto": null,
+  "payload": {
+    "base": "epi",
+    "trechos_usados": 1,
+    "ids_trechos": [
+      "EPI-Q025",
+      "EPI-Q021",
+      "EPI-Q022"
+    ],
+    "bases_consultadas": [
+      "epi",
+      "saude_ocupacional"
+    ],
+    "cobertura": "parcial",
+    "id_solicitacao_epi": 58
+  },
+  "saidas": [
+    {
+      "tipo": "mensagem",
+      "para": {
+        "perfil": "colaborador",
+        "id_colaborador": 42
+      },
+      "nivel_detalhe": "individual",
+      "texto": "Obrigado por avisar. Por favor, interrompa a atividade de risco, não use o EPI danificado e comunique o seu gestor. Na troca, entregue o EPI danificado ao TST para que ele seja descartado corretamente. Abri o pedido de reposição nº 58, e o seu gestor e o TST serão avisados. A reposição deve acontecer em até 24 horas.",
+      "fontes": [
+        {
+          "base": "epi",
+          "titulo": "Base de Conhecimento EPI",
+          "versao": "1.2",
+          "refs": [
+            "EPI-Q025",
+            "EPI-Q021",
+            "EPI-Q022"
+          ]
+        }
+      ],
+      "agendar_para": null,
+      "sensivel": false
+    }
+  ],
+  "eventos": [
+    {
+      "tipo": "solicitacao_epi.aberta",
+      "dados": {
+        "id_solicitacao": 58
+      }
+    }
+  ],
+  "decisao": {
+    "motivo": "resposta RAG com 3 trecho(s) vigente(s); bases: EPI, Saúde Ocupacional; modo extrativo (llm_nao_configurado)",
+    "usou_llm": false,
+    "confianca": 0.43,
+    "modelo": null
+  },
+  "erro": null
+}

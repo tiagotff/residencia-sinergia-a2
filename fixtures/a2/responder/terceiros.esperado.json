@@ -1,0 +1,45 @@
+{
+  "protocolo": "sinergia/1",
+  "id_mensagem": "r-215-01",
+  "tipo": "RESULTADO",
+  "acao": "a2.responder",
+  "origem": "A2",
+  "destino": "A0",
+  "em_resposta_a": "t-215-01",
+  "correlacao": {
+    "id_caso": null,
+    "thread_id": "chat-42-215",
+    "id_tarefa": "t-215-01"
+  },
+  "status": "OK",
+  "estado_proposto": null,
+  "payload": {
+    "base": null,
+    "trechos_usados": 0,
+    "sinal": [
+      "terceiros:dado_de_colega"
+    ]
+  },
+  "saidas": [
+    {
+      "tipo": "mensagem",
+      "para": {
+        "perfil": "colaborador",
+        "id_colaborador": 42
+      },
+      "nivel_detalhe": "individual",
+      "texto": "Por privacidade, não posso compartilhar informações de outras pessoas. Se a dúvida for sobre você, posso ajudar por aqui.",
+      "fontes": [],
+      "agendar_para": null,
+      "sensivel": false
+    }
+  ],
+  "eventos": [],
+  "decisao": {
+    "motivo": "guardrail dados de terceiros: ['terceiros:dado_de_colega']",
+    "usou_llm": false,
+    "confianca": 1.0,
+    "modelo": null
+  },
+  "erro": null
+}

@@ -1,0 +1,58 @@
+{
+  "protocolo": "sinergia/1",
+  "id_mensagem": "r-209-01",
+  "tipo": "RESULTADO",
+  "acao": "a2.responder",
+  "origem": "A2",
+  "destino": "A0",
+  "em_resposta_a": "t-209-01",
+  "correlacao": {
+    "id_caso": null,
+    "thread_id": "chat-42-209",
+    "id_tarefa": "t-209-01"
+  },
+  "status": "OK",
+  "estado_proposto": null,
+  "payload": {
+    "base": "saude_ocupacional",
+    "trechos_usados": 1,
+    "ids_trechos": [
+      "SO-Q009"
+    ],
+    "bases_consultadas": [
+      "saude_ocupacional"
+    ],
+    "cobertura": "parcial"
+  },
+  "saidas": [
+    {
+      "tipo": "mensagem",
+      "para": {
+        "perfil": "colaborador",
+        "id_colaborador": 42
+      },
+      "nivel_detalhe": "individual",
+      "texto": "Depende dos riscos da sua atividade: se você está exposto a riscos identificados no PGR, ou tem alguma condição crônica que aumente a sensibilidade a esses riscos, o exame é anual ou em intervalo menor, a critério do médico; para os demais colaboradores, o exame clínico é a cada dois anos. A data do seu próximo exame é calculada a partir do último exame realizado e da periodicidade do seu cargo. Você pode consultá-la aqui no chat.",
+      "fontes": [
+        {
+          "base": "saude_ocupacional",
+          "titulo": "Base de Conhecimento Saúde Ocupacional",
+          "versao": "1.0",
+          "refs": [
+            "SO-Q009"
+          ]
+        }
+      ],
+      "agendar_para": null,
+      "sensivel": false
+    }
+  ],
+  "eventos": [],
+  "decisao": {
+    "motivo": "resposta RAG com 1 trecho(s) vigente(s); bases: Saúde Ocupacional; modo extrativo (llm_nao_configurado)",
+    "usou_llm": false,
+    "confianca": 0.49,
+    "modelo": null
+  },
+  "erro": null
+}

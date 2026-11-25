@@ -1,0 +1,43 @@
+{
+  "protocolo": "sinergia/1",
+  "id_mensagem": "r-105-06",
+  "tipo": "RESULTADO",
+  "acao": "a2.acompanhar_afastamento",
+  "origem": "A2",
+  "destino": "A0",
+  "em_resposta_a": "t-105-06",
+  "correlacao": {
+    "id_caso": 105,
+    "thread_id": "chat-42-105",
+    "id_tarefa": "t-105-06"
+  },
+  "status": "OK",
+  "estado_proposto": null,
+  "payload": {
+    "id_caso": 105,
+    "marco": "meio",
+    "ids_trechos": []
+  },
+  "saidas": [
+    {
+      "tipo": "mensagem",
+      "para": {
+        "perfil": "colaborador",
+        "id_colaborador": 42
+      },
+      "nivel_detalhe": "individual",
+      "texto": "Olá, Carla. Seu afastamento vai até quarta. Se precisar de algo para o retorno, é só escrever aqui.",
+      "fontes": [],
+      "agendar_para": "2026-11-23T10:00:00-03:00",
+      "sensivel": false
+    }
+  ],
+  "eventos": [],
+  "decisao": {
+    "motivo": "modelo fixo F7 (marco meio)",
+    "usou_llm": false,
+    "confianca": 1.0,
+    "modelo": null
+  },
+  "erro": null
+}
